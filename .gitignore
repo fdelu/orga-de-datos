@@ -2,3 +2,4 @@ df.csv
 df_resultados.csv
 desktop.ini
 .ipynb_checkpoints/
+*__pycache__
