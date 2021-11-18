@@ -1,8 +1,10 @@
 from sklearn.model_selection import train_test_split
+from sklearn.impute import KNNImputer
 from os.path import exists
 import pandas as pd
 from sklearn import preprocessing
 import numpy as np
+import requests
 
 variables_numericas = [
     "temp_min",
@@ -21,6 +23,14 @@ variables_numericas = [
     "mm_evaporados_agua",
     "mm_lluvia_dia",
     "horas_de_sol",
+    "dia"
+]
+
+variables_categoricas = [
+    "barrio",
+    "direccion_viento_tarde",
+    "direccion_viento_temprano",
+    "rafaga_viento_max_direccion"
 ]
 
 def initialize_dataset():
@@ -40,8 +50,8 @@ def initialize_dataset():
 
     if not exists("datasets/df_features.csv") or not exists("datasets/df_features_holdout.csv") or \
     not exists("datasets/df_target.csv") or not exists("datasets/df_target_holdout.csv"):
-        df_features = pd.read_csv("datasets/df_all_features.csv", low_memory = False)
-        df_target = pd.read_csv("datasets/df_all_target.csv", low_memory=False)
+        df_features = pd.read_csv("datasets/df_all_features.csv", low_memory = False, index_col="id")
+        df_target = pd.read_csv("datasets/df_all_target.csv", low_memory=False, index_col="id")
 
         X_train, X_holdout, Y_train, Y_holdout = train_test_split(df_features, df_target, test_size=0.1, random_state=123)
         X_train.to_csv("datasets/df_features.csv")
@@ -54,32 +64,46 @@ def common(df_features, df_target):
     df_target.replace({'llovieron_hamburguesas_al_dia_siguiente': {"si": 1, "no": 0 }},
        inplace = True)
     df_target.llovieron_hamburguesas_al_dia_siguiente.astype(np.float64, copy=False)
+    df_features.dia = df_features.dia.str.replace("-","").astype(np.uint64)
     
-    df_features.drop(labels = df_features[(df_features["presion_atmosferica_tarde"] == "1.009.555") | \
-                        (df_features["presion_atmosferica_tarde"] == "10.167.769.999.999.900")].index, inplace=True)
+    drop_index = df_features[(df_features.nubosidad_temprano == 9) | (df_features.nubosidad_tarde == 9) | \
+                            (df_features.presion_atmosferica_tarde == "1.009.555") | \
+                            (df_features.presion_atmosferica_tarde == "10.167.769.999.999.900") | \
+                             df_target.llovieron_hamburguesas_al_dia_siguiente.isna()
+                            ].index
+    df_features.drop(drop_index, inplace=True)
+    df_target.drop(drop_index, inplace=True)
+    
     df_features.presion_atmosferica_tarde.astype(np.float64, copy=False)
     df_features.astype({
-        "dia": "datetime64",
         "barrio": "category",
         "direccion_viento_tarde": "category",
         "direccion_viento_temprano": "category",
         "rafaga_viento_max_direccion": "category"
     }, copy=False)
-    df_features.drop(labels=df_features[df_features.nubosidad_temprano == 9].index, inplace=True)
-    df_features.drop(labels=df_features[df_features.nubosidad_tarde == 9].index, inplace=True)
+    
     df_features.rename(columns={"velocidad_viendo_tarde": "velocidad_viento_tarde",
               "velocidad_viendo_temprano": "velocidad_viento_temprano"}, inplace=True)
 
 def svm():
     initialize_dataset()
-    df_features = pd.read_csv("datasets/df_features.csv", low_memory = False)
-    df_target = pd.read_csv("datasets/df_target.csv", low_memory=False)
+    df_features = pd.read_csv("datasets/df_features.csv", low_memory = False, index_col="id")
+    df_target = pd.read_csv("datasets/df_target.csv", low_memory=False, index_col="id")
     common(df_features, df_target)
+    
 
-    min_max_scaler = preprocessing.MinMaxScaler()
-    escalado = min_max_scaler.fit_transform(df_features[variables_numericas])
+    df_features = pd.get_dummies(df_features, columns = variables_categoricas, drop_first=True, dummy_na=True)
     
+    X_train, X_test, Y_train, Y_test = train_test_split(df_features, df_target, test_size=0.35, random_state=123)
+    min_max_scaler = preprocessing.StandardScaler()
+    min_max_scaler.fit(X_train)
+    X_train = min_max_scaler.transform(X_train)
+    X_test = min_max_scaler.transform(X_test)
     
-    return df_features, df_target
+    imputer = KNNImputer(n_neighbors=3, weights="uniform")
+    X_train = pd.DataFrame(imputer.fit_transform(X_train), columns=df_features.columns)
+    
+    return X_train, X_test, Y_test, Y_train
+
     
     
