@@ -7,6 +7,12 @@ from sklearn import preprocessing
 import numpy as np
 import requests
 import math
+from sklearn.pipeline import Pipeline
+
+from sklearn.experimental import enable_iterative_imputer
+from sklearn.impute import IterativeImputer, SimpleImputer
+from sklearn.preprocessing import StandardScaler
+
 
 variables_numericas = [
     "temp_min",
@@ -35,6 +41,10 @@ variables_categoricas = [
     "rafaga_viento_max_direccion"
 ]
 
+# Inicializa el dataset, descargandolo y dividiendolo al azar en train y test-holdout con un 10% de las instancias al azar
+# Guarda el dataset entero en datasets/df_all_features.csv y datasets/df_all_target.csv, la parte de entrenamiento en 
+# datasets/df_features.csv y datasets/df_target.csv, y el holdout en datasets/df_features_holdout.csv y datasets/df_target_holdout.csv
+# SOLO se ejecuta si no existe alguno de esos archivos
 def initialize_dataset():
     if not exists("datasets/df_all_features.csv"):
         with requests.get(
@@ -60,7 +70,14 @@ def initialize_dataset():
         X_holdout.to_csv("datasets/df_features_holdout.csv")
         Y_train.to_csv("datasets/df_target.csv")
         Y_holdout.to_csv("datasets/df_target_holdout.csv")
-        
+
+# Preprocessing común para todos los modelos. Las transformaciones que hace son:
+# * Dropear la columna llovieron_hamburguesas_hoy (dependiente de mm_lluvia_dia)
+# * Reemplazar los "si"/"no" de llovieron_hamburguesas_al_dia_siguiente por 1/0
+# * Transformar las fechas de la columna dia a números enteros, sacandole los "-"
+# * Dropear las instancias con nubosidad = 9 y presiones inválidas (menos de 10)
+# * Dropear las instancias con missings en la variable target, ya que no proveen información
+# * Corregir typos y asignar tipos de datos correctos
 def common(df_features, df_target):
     df_features.drop(columns=["llovieron_hamburguesas_hoy"], inplace=True, errors="ignore") # Era dependiente de otra feature
     df_target.replace({'llovieron_hamburguesas_al_dia_siguiente': {"si": 1, "no": 0 }},
@@ -106,6 +123,10 @@ direcciones = {
     'Nornoroeste' : 5*np.pi/8,
 }
 
+# Transforma las features direccion_viento_tarde, direccion_viento_temprano y rafaga_viento_max_direccion en
+# en 2 features nuevas númericas (6 en total) evaluando el seno y coseno en el ángulo que representa su dirección.
+# Deja NaN en los missings. El ángulo 0 es el este y crece positivamente hacia el Norte.
+# Estas 2 columnas representan una proyección entre -1 y 1 según la dirección entre x e y
 def viento_trigonometrico(df):
     v_cos = lambda x: np.nan if str(x) == "nan" else np.cos(direcciones[x])
     v_sin = lambda x: np.nan if str(x) == "nan" else np.sin(direcciones[x])
@@ -116,6 +137,7 @@ def viento_trigonometrico(df):
     df["cos_rafaga_viento_max_direccion"] = df["rafaga_viento_max_direccion"].apply(v_cos)
     df["sin_rafaga_viento_max_direccion"] = df["rafaga_viento_max_direccion"].apply(v_sin)
     df.drop(columns=["direccion_viento_tarde", "direccion_viento_temprano", "rafaga_viento_max_direccion"], inplace=True)
+
 
 def svm():
     initialize_dataset()
@@ -153,4 +175,38 @@ def svm():
     return X_train, X_test, Y_test, Y_train
 
     
+def svm_2():
+    initialize_dataset()
+    df_features = pd.read_csv("datasets/df_features.csv", low_memory = False, index_col = "id")
+
+    df_target = pd.read_csv("datasets/df_target.csv", low_memory=False, index_col = "id")
+    common(df_features, df_target)
     
+    viento_trigonometrico(df_features)
+    
+    df_features.reset_index(inplace=True)
+    # Hay 49 barrios, para no agregar 48 columnas mas con one hot encoding voy a usar hash con 24 columnas
+    fh = FeatureHasher(n_features=24, input_type='string')
+    df_features.barrio = df_features.barrio.fillna("nan")
+    hashed_features = fh.fit_transform(df_features["barrio"].values.reshape(-1, 1)).todense()
+    df_features = df_features.join(pd.DataFrame(hashed_features).add_prefix("_barrio"))
+    df_features.drop(columns=["barrio"], inplace=True)
+    df_features.set_index("id")
+    
+    pipe = Pipeline([('scaler', StandardScaler()), ('imputer', SimpleImputer())])
+
+    return df_features, df_target, pipe
+
+
+# Agrega un StandarScaler a la pipe (E[x] = 0, Var(X) = 1)
+def standarizer(pipe):
+    pipe.steps.append(['imputer', StandardScaler()])
+
+# Agrega un IterativeImputer a la pipe (imputer de missings a partir de regresiones iterativas)
+def iterative_imputer(pipe):
+    pipe.steps.append(['scaler', IterativeImputer()])
+
+# Dropea features categóricas (Si se ejecutó viento_trigonométrico(), solo droppea el barrio)
+def drop_categoricas(df_features):
+    # Para Naive Bayes uso solo variables continua
+    df_features.drop(columns=variables_categoricas, inplace=True, errors = 'ignore')
