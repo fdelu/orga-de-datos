@@ -178,7 +178,7 @@ def svm():
 def hashing_trick(df, n, feature):
     df.reset_index(inplace=True)
     fh = FeatureHasher(n_features=n, input_type='string')
-    df.barrio = df.barrio.fillna("nan")
+    df[feature] = df[feature].fillna("nan")
     hashed_features = fh.fit_transform(df[feature].values.reshape(-1, 1)).todense()
     df = df.join(pd.DataFrame(hashed_features).add_prefix("_" + feature))
     df.drop(columns=[feature], inplace=True)
