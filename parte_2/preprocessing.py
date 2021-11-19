@@ -208,3 +208,7 @@ def iterative_imputer(pipe= None):
 def drop_categoricas(df_features):
     # Para Naive Bayes uso solo variables continua
     df_features.drop(columns=variables_categoricas, inplace=True, errors = 'ignore')
+    
+def dummy(df, feature):
+    df = pd.get_dummies(df, columns=feature, drop_first=True, dummy_na=True)
+    return df
