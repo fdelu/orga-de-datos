@@ -174,37 +174,35 @@ def svm():
 
     return X_train, X_test, Y_test, Y_train
 
-    
-def svm_2():
-    initialize_dataset()
-    df_features = pd.read_csv("datasets/df_features.csv", low_memory = False, index_col = "id")
+# Hashing trick de la feature dada a un vector de largo n. Los missings se consideran una categoria más
+def hashing_trick(df, n, feature):
+    df.reset_index(inplace=True)
+    fh = FeatureHasher(n_features=n, input_type='string')
+    df.barrio = df.barrio.fillna("nan")
+    hashed_features = fh.fit_transform(df[feature].values.reshape(-1, 1)).todense()
+    df = df.join(pd.DataFrame(hashed_features).add_prefix("_" + feature))
+    df.drop(columns=[feature], inplace=True)
+    df.set_index("id")
+    return df
 
-    df_target = pd.read_csv("datasets/df_target.csv", low_memory=False, index_col = "id")
-    common(df_features, df_target)
-    
-    viento_trigonometrico(df_features)
-    
-    df_features.reset_index(inplace=True)
-    # Hay 49 barrios, para no agregar 48 columnas mas con one hot encoding voy a usar hash con 24 columnas
-    fh = FeatureHasher(n_features=24, input_type='string')
-    df_features.barrio = df_features.barrio.fillna("nan")
-    hashed_features = fh.fit_transform(df_features["barrio"].values.reshape(-1, 1)).todense()
-    df_features = df_features.join(pd.DataFrame(hashed_features).add_prefix("_barrio"))
-    df_features.drop(columns=["barrio"], inplace=True)
-    df_features.set_index("id")
-    
-    pipe = Pipeline([('scaler', StandardScaler()), ('imputer', SimpleImputer())])
+def _pipe(pipe, imp):
+    if pipe is None:
+        pipe = Pipeline([imp])
+    else:
+        pipe.steps.append(imp)
+    return pipe
 
-    return df_features, df_target, pipe
-
-
+# Agrega un SimpleImputer a la pipe (Rellena con E[x])
+def simple_imputer(pipe = None):
+    return _pipe(pipe, ('imputer', SimpleImputer()))
+    
 # Agrega un StandarScaler a la pipe (E[x] = 0, Var(X) = 1)
-def standarizer(pipe):
-    pipe.steps.append(['imputer', StandardScaler()])
+def standarizer(pipe = None):
+    return _pipe(pipe, ('scaler', StandardScaler()))
 
 # Agrega un IterativeImputer a la pipe (imputer de missings a partir de regresiones iterativas)
-def iterative_imputer(pipe):
-    pipe.steps.append(['scaler', IterativeImputer()])
+def iterative_imputer(pipe= None):
+    return _pipe(pipe, ('imputer', IterativeImputer()))
 
 # Dropea features categóricas (Si se ejecutó viento_trigonométrico(), solo droppea el barrio)
 def drop_categoricas(df_features):
