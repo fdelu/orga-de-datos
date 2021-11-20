@@ -42,6 +42,38 @@ variables_categoricas = [
     "rafaga_viento_max_direccion"
 ]
 
+comunas = {
+    "Comuna 1": ["Retiro", "San Nicolás", "Puerto Madero", "San Telmo", "Monserrat", "Constitución"],
+    "Comuna 2": ["Recoleta"],
+    "Comuna 3": ["Balvanera", "San Cristóbal"],
+    "Comuna 4": ["La Boca", "Barracas", "Parque Patricios", "Nueva Pompeya"],
+    "Comuna 5": ["Almagro", "Boedo"],
+    "Comuna 6": ["Caballito"],
+    "Comuna 7": ["Flores", "Parque Chacabuco"],
+    "Comuna 8": ["Villa Soldati", "Villa Riachuelo", "Villa Lugano"],
+    "Comuna 9": ["Liniers", "Mataderos", "Parque Avellaneda"],
+    "Comuna 10":["Villa Real", "Monte Castro", "Versalles", "Floresta", "Vélez Sársfield", "Villa Luro"],
+    "Comuna 11":["Villa General Mitre", "Villa Devoto", "Villa del Parque", "Villa Santa Rita"],
+    "Comuna 12":["Coghlan", "Saavedra", "Villa Urquiza", "Villa Pueyrredón"],
+    "Comuna 13":["Núñez", "Belgrano", "Colegiales"],
+    "Comuna 14":["Palermo", "Palermo cheto"],
+    "Comuna 15":["Chacarita", "Villa Crespo", "La Paternal", "Villa Ortúzar", "Agronomía", "Parque Chas"]
+}
+
+def get_dict_barrios():
+    barrios = {}
+    for comuna in comunas:
+        for barrio in comunas[comuna]:
+            barrios[barrio] = comuna
+            
+    return barrios
+
+def barrios_a_comunas(df):
+    barrios = get_dict_barrios()
+    df.replace(barrios, inplace=True)
+    df = dummy(df, ["barrio"])
+    return df
+
 # Inicializa el dataset, descargandolo y dividiendolo al azar en train y test-holdout con un 10% de las instancias al azar
 # Guarda el dataset entero en datasets/df_all_features.csv y datasets/df_all_target.csv, la parte de entrenamiento en 
 # datasets/df_features.csv y datasets/df_target.csv, y el holdout en datasets/df_features_holdout.csv y datasets/df_target_holdout.csv
