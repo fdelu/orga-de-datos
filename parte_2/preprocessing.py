@@ -8,6 +8,7 @@ import numpy as np
 import requests
 import math
 from sklearn.pipeline import Pipeline
+from sklearn.decomposition import PCA
 
 from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import IterativeImputer, SimpleImputer
@@ -235,12 +236,13 @@ def standarizer(pipe = None):
 
 # Agrega un IterativeImputer a la pipe (imputer de missings a partir de regresiones iterativas)
 def iterative_imputer(pipe= None):
-    return _pipe(pipe, ('imputer', IterativeImputer()))
+    return _pipe(pipe, ('imputer', IterativeImputer(random_state = 123)))
 
 # Dropea features categóricas (Si se ejecutó viento_trigonométrico(), solo droppea el barrio)
-def drop_categoricas(df_features):
+def drop_categoricas(df):
     # Para Naive Bayes uso solo variables continua
-    return df_features.drop(columns=variables_categoricas, errors = 'ignore')
+    df.drop(columns=variables_categoricas, errors = 'ignore', inplace=True)
+    return df
     
 # One hot encoding a una feature categorica
 def dummy(df, feature):
@@ -253,3 +255,24 @@ def dia_a_mes(df):
     df["mes"] = df["dia"].dt.month
     df.drop(columns="dia", inplace=True)
     return df
+
+# Dropea una de las features de las parejas más correlacionadas
+def drop_correlacionadas(df):
+    df.drop(columns=["temp_max", "presion_atmosferica_temprano", "temperatura_temprano"], inplace=True)
+    return df
+
+# Dropea las nubosidades
+def drop_discretas(df):
+    df.drop(columns=["nubosidad_temprano", "nubosidad_tarde"], inplace=True)
+    return df
+
+# Combina las features continuas dadas en 1 utilizando PCA. En este caso, 
+# se usa SimpleImputer() para los missings de las features a combinar
+def pca(df, features, nuevo_nombre = "combinada"):
+    filtrado = df[features]
+    imputer = SimpleImputer()
+    filtado = imputer.fit_transform(filtrado)
+    pca = PCA(n_components = 1, random_state = 123)
+    df[nuevo_nombre] = pca.fit_transform(filtado)
+    df.drop(columns=features, inplace=True)
+    
