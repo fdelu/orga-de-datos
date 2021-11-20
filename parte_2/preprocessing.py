@@ -78,12 +78,13 @@ def initialize_dataset():
 # * Dropear las instancias con nubosidad = 9 y presiones inválidas (menos de 10)
 # * Dropear las instancias con missings en la variable target, ya que no proveen información
 # * Corregir typos y asignar tipos de datos correctos
-def common(df_features, df_target):
+def common(df_features, df_target, fecha_to_int = True):
     df_features.drop(columns=["llovieron_hamburguesas_hoy"], inplace=True, errors="ignore") # Era dependiente de otra feature
     df_target.replace({'llovieron_hamburguesas_al_dia_siguiente': {"si": 1, "no": 0 }},
        inplace = True)
     df_target.llovieron_hamburguesas_al_dia_siguiente.astype(np.float64, copy=False)
-    df_features.dia = df_features.dia.str.replace("-","").astype(np.uint64)
+    if fecha_to_int:
+        df_features.dia = df_features.dia.str.replace("-","").astype(np.uint64)
     
     drop_index = df_features[(df_features.nubosidad_temprano == 9) | (df_features.nubosidad_tarde == 9) | \
                             (df_features.presion_atmosferica_tarde == "1.009.555") | \
@@ -182,7 +183,7 @@ def hashing_trick(df, n, feature):
     hashed_features = fh.fit_transform(df[feature].values.reshape(-1, 1)).todense()
     df = df.join(pd.DataFrame(hashed_features).add_prefix("_" + feature))
     df.drop(columns=[feature], inplace=True)
-    df.set_index("id")
+    df.set_index("id", inplace=True)
     return df
 
 def _pipe(pipe, imp):
@@ -207,8 +208,16 @@ def iterative_imputer(pipe= None):
 # Dropea features categóricas (Si se ejecutó viento_trigonométrico(), solo droppea el barrio)
 def drop_categoricas(df_features):
     # Para Naive Bayes uso solo variables continua
-    df_features.drop(columns=variables_categoricas, inplace=True, errors = 'ignore')
+    return df_features.drop(columns=variables_categoricas, errors = 'ignore')
     
+# One hot encoding a una feature categorica
 def dummy(df, feature):
     df = pd.get_dummies(df, columns=feature, drop_first=True, dummy_na=True)
+    return df
+
+# Convierte la feature "dia" a una que solo tiene el mes
+def dia_a_mes(df):
+    df["dia"] = pd.to_datetime(df["dia"])
+    df["mes"] = df["dia"].dt.month
+    df.drop(columns="dia", inplace=True)
     return df
