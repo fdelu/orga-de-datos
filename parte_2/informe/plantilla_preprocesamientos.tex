@@ -1,0 +1,17 @@
+\newcolumntype{Y}{>{\small\raggedright\arraybackslash}X}
+\renewcommand{\arraystretch}{1.5}
+\noindent
+\begin{longtable}{|>{\setlength\hsize{0.25\hsize}}X|>{\setlength\hsize{0.45\hsize}}X|>{\setlength\hsize{0.3\hsize}}X|}
+\hline
+Nombre del procesamiento & Descripción & Nombre de la función \\
+\hline
+Nombre &
+Convierte las features de dirección del viento en pares de features $\langle\sin{\theta},\cos{\theta}\rangle$, donde $\theta$ es el ángulo de dicha dirección &
+\textbf{viento\_trigonometrico()} \\
+\hline
+Nombre &
+Realiza un hashing de los valores de la feature \textbf{barrio}, donde el nombre de cada barrio se reemplaza por el nombre de su comuna (\textit{Comuna 1}, \textit{Comuna 2}, etc) &
+\textbf{barrios\_a\_comunas()} \\
+\hline
+\caption{Nombre de la tabla} \\
+\end{longtable}

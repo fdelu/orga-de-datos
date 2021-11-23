@@ -3,3 +3,8 @@ df_resultados.csv
 desktop.ini
 .ipynb_checkpoints/
 *__pycache__
+parte_2/informe/main.aux
+parte_2/informe/main.log
+parte_2/informe/main.synctex.gz
+parte_2/informe/main.toc
+parte_2/informe/main.pdf
