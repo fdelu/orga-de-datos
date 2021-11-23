@@ -265,14 +265,3 @@ def drop_correlacionadas(df):
 def drop_discretas(df):
     df.drop(columns=["nubosidad_temprano", "nubosidad_tarde"], inplace=True)
     return df
-
-# Combina las features continuas dadas en 1 utilizando PCA. En este caso, 
-# se usa SimpleImputer() para los missings de las features a combinar
-def pca(df, features, nuevo_nombre = "combinada"):
-    filtrado = df[features]
-    imputer = SimpleImputer()
-    filtado = imputer.fit_transform(filtrado)
-    pca = PCA(n_components = 1, random_state = 123)
-    df[nuevo_nombre] = pca.fit_transform(filtado)
-    df.drop(columns=features, inplace=True)
-    
