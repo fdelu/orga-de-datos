@@ -1,0 +1,209 @@
+%
+% Carátula oficial de 75.02 Algoritmos y Programación I, cátedra Cardozo.
+%
+% Basado en el template realizado por Diego Essaya, disponible en
+%                                                         http://lug.fi.uba.ar
+% Modificado por Michel Peterson.
+% Modificado por Sebastián Santisi.
+
+%
+% Acá se define el tamaño de letra principal:
+%
+\documentclass[12pt]{article}
+
+%
+% Título y autor(es):
+%
+\title{Trabajo Práctico N\b o X}
+\author{Apellido1\\Apellido2}
+
+%------------------------- Carga de paquetes ---------------------------
+%
+% Si no necesitás algún paquete, comentalo.
+%
+
+%
+% Definición del tamaño de página y los márgenes:
+%
+\usepackage[margin=1in]{geometry}
+
+%
+% Vamos a escribir en castellano:
+%
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{ltxtable}
+
+\usepackage{changepage}
+
+%
+% Si preferís el tipo de letra Helvetica (Arial), descomentá las siguientes
+% dos lineas (las fórmulas seguirán estando en Times):
+%
+%\usepackage{helvet}
+%\renewcommand\familydefault{\sfdefault}
+
+%
+% El paquete amsmath agrega algunas funcionalidades extra a las fórmulas. 
+% Además defino la numeración de las tablas y figuras al estilo "Figura 2.3", 
+% en lugar de "Figura 7". (Por lo tanto, aunque no uses fórmulas, si querés
+% este tipo de numeración dejá el paquete amsmath descomentado).
+%
+\usepackage{amsmath}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+%
+% Para tener cabecera y pie de página con un estilo personalizado:
+%
+\usepackage{fancyhdr}
+
+%
+% Para poner el texto "Figura X" en negrita:
+% (Si no tenés el paquete 'caption2', probá con 'caption').
+%
+\usepackage[hang,bf]{caption}
+
+%
+% Para poder usar subfiguras: (al estilo Figura 2.3(b) )
+%
+%\usepackage{subfigure}
+
+%
+% Para poder agregar notas al pie en tablas:
+%
+%\usepackage{threeparttable}
+
+%------------------------------ graphicx ----------------------------------
+%
+% Para incluir imágenes, el siguiente código carga el paquete graphicx 
+% según se esté generando un archivo dvi o un pdf (con pdflatex). 
+
+% Para generar dvi, descomentá la linea siguiente:
+%\usepackage[dvips]{graphicx}
+
+% Para generar pdf, descomentá las dos lineas seguientes:
+\usepackage[pdftex]{graphicx}
+\pdfcompresslevel=9
+
+%
+% Todas las imágenes están en el directorio tp-img:
+%
+\newcommand{\imgdir}{includes}
+\graphicspath{{\imgdir/}}
+%
+%------------------------------ graphicx ----------------------------------
+
+% Necesitas este paquete si haces los diagrámas de flujo en el prográma Dia 
+%\usepackage{tikz}
+
+
+%------------------------- Inicio del documento ---------------------------
+
+\begin{document}
+	
+	%
+	% Hago que en la cabecera de página se muestre a la derecha la sección,
+	% y en el pie, en número de página a la derecha:
+	%
+	\pagestyle{fancy}
+	\renewcommand{\sectionmark}[1]{\markboth{}{\thesection\ \ #1}}
+	\lhead{}
+	\chead{}
+	\rhead{\rightmark}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{\thepage}
+	
+	%
+	% Carátula:
+	%
+	\begin{titlepage}
+		
+		\thispagestyle{empty}
+		
+		\begin{center}
+			\includegraphics[scale=0.3]{fiuba}\\
+			\large{\textsc{Universidad de Buenos Aires}}\\
+			\large{\textsc{Facultad De Ingeniería}}\\
+			\small{Año 2021 - 2\textsuperscript{do} Cuatrimestre}
+		\end{center}
+		
+		\vfill
+		
+		\begin{center}
+			\Large{\underline{\textsc{Organización de Datos (75.06)}}}
+		\end{center}
+		
+		\vfill
+		
+		\begin{tabbing}
+			\hspace{2cm}\=\+TRABAJO PRÁCTICO Nº2\\
+			TEMA: \\
+			FECHA DE ENTREGA: 8/12/2021\\% \today\\
+			\\
+			INTEGRANTES:\hspace{-1cm}\=\+\hspace{1cm}\=\hspace{6cm}\=\\
+			DE LUCA ANDREA, Felipe	\>\>- \#88888\\
+			FOPPIANO, Elián	\>\>- \#88888\\
+		\end{tabbing}
+		
+		\vfill
+		
+		\hrule
+		\vspace{0.2cm}
+		
+		\noindent\small{75.06 - Organización de Datos}
+		
+	\end{titlepage}
+	
+	%
+	% Hago que las páginas se comiencen a contar a partir de aquí:
+	%
+	\setcounter{page}{1}
+	
+	%
+	% Pongo el índice en una página aparte:
+	%
+	\tableofcontents
+	\newpage
+	
+	%
+	% Inicio del TP:
+	%
+	\newgeometry{margin=0.2in}
+	
+	\section{Plantillas}
+	
+	Modelo de tabla para el informe
+	
+	\begingroup
+	\fontsize{11pt}{12pt}\selectfont
+	
+	\LTXtable{\textwidth}{plantilla_preprocesamientos.tex}
+	
+	\endgroup
+	
+	(Los números son placeholders)
+	
+	\begingroup
+	\fontsize{11pt}{12pt}\selectfont
+	
+	\LTXtable{\textwidth}{plantilla_metricas.tex}
+	
+	\endgroup
+	
+	
+	\restoregeometry
+	
+	
+	
+	\pagebreak
+	
+\end{document}
+
