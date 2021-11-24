@@ -5,13 +5,38 @@
 \hline
 Nombre del procesamiento & Descripción & Nombre de la función \\
 \hline
-Nombre &
+Común & 
+Drop de \textit{llovieron\_hamburguesas\_hoy} \newline
+Reemplazar \textit{si} y \textit{no} por 1 y 0 en variable target \newline
+Drop de muestras con missings en variable target \newline
+Drop de muestras con datos inválidos \newline
+Corrección de typos en nombres de features
+&
+\textbf{common()} \\
+\hline
+Viento trigonométrico &
 Convierte las features de dirección del viento en pares de features $\langle\sin{\theta},\cos{\theta}\rangle$, donde $\theta$ es el ángulo de dicha dirección &
 \textbf{viento\_trigonometrico()} \\
 \hline
-Nombre &
+Barrios a comunas &
 Realiza un hashing de los valores de la feature \textbf{barrio}, donde el nombre de cada barrio se reemplaza por el nombre de su comuna (\textit{Comuna 1}, \textit{Comuna 2}, etc) &
 \textbf{barrios\_a\_comunas()} \\
 \hline
-\caption{Nombre de la tabla} \\
+Estandarización &
+Agrega un \textbf{StandardScaler()} a la \textbf{Pipeline}, que transforma los datos tal que su distribución tenga esperanza 0 y varianza 1 (deben ser todas las features numéricas) &
+\textbf{standarizer()} \\
+\hline
+Imputador iterativo &
+Agrega un \textbf{IterativeImputer()} a la \textbf{Pipeline}, que imputa los valores faltantes a partir de regresiones iterativas &
+\textbf{iterative\_imputer()} \\
+\hline
+Drop categóricas &
+Dropea las features categóricas del dataset (Si se ejecutó el preprocesamiento \textit{Viento trigonometrico}, solo dropea la feature \textbf{barrio}) &
+\textbf{drop\_categoricas()} \\
+\hline
+Hashing trick &
+Transforma una feature categórica en varias columnas con valores 0 o 1 a partir de un vector obtenido con una función de hash sobre la variable &
+\textbf{drop\_categoricas()} \\
+\hline
+\caption{Preprocesamientos} \\
 \end{longtable}
