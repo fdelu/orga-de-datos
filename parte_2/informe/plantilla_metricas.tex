@@ -5,24 +5,30 @@
 \hline
 Nombre del modelo & Preprocesamiento & AUC \newline ROC & Accuracy & Precision & Recall & F1 score \\
 \hline
-RandomForestClassifier &
-Nombre del procesamiento 1 \newline
-Nombre del procesamiento 2 \newline 
-Nombre del procesamiento 3 &
-0.8 &
-0.7 &
-0.4 &
-0.5 &
-0.8 \\
-\hline
 DecisionTreeClassifier &
-Nombre del procesamiento 1 \newline
-Nombre del procesamiento 2 &
-0.5 &
-0.4 &
-0.7 &
-0.8 &
-0.6 \\
+Común $(\textbf{fecha\_to\_int=True})$ \newline
+Viento trigonométrico \newline
+Barrios a comunas \newline
+Día a mes \newline
+Imputador iterativo &
+0.870 &
+0.849 &
+0.763 &
+0.470 &
+0.582 \\
+\hline
+RandomForestClassifier &
+Común $(\textbf{fecha\_to\_int=True})$ \newline
+Viento trigonométrico \newline
+Día a mes \newline
+Drop categóricas \newline
+Estandarización \newline
+Imputador iterativo &
+0.889 &
+0.859 &
+0.764 &
+0.538 &
+0.631 \\
 \hline
 SVM &
 Común \newline
