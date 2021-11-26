@@ -279,3 +279,16 @@ def drop_correlacionadas(df):
 def drop_discretas(df):
     df.drop(columns=["nubosidad_temprano", "nubosidad_tarde"], inplace=True)
     return df
+
+# Dropea las columnas que no se consideran importantes
+# para un determinado modelo (un score menor o igual al threshold)
+# Los scores deben estar en el mismo orden que las features
+# del dataset
+def drop_poco_importantes(df, scores, threshold):
+    features_a_eliminar = []
+    for feature, score in zip(df.columns, scores):
+        if score <= threshold:
+            features_a_eliminar.append(feature)
+    
+    df.drop(columns=features_a_eliminar, inplace=True)
+    return df
