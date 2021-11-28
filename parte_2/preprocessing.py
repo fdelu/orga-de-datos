@@ -12,8 +12,7 @@ from sklearn.decomposition import PCA
 
 from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import IterativeImputer, SimpleImputer
-from sklearn.preprocessing import StandardScaler
-
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
 
 variables_numericas = [
     "temp_min",
@@ -103,6 +102,18 @@ def initialize_dataset():
         X_holdout.to_csv("datasets/df_features_holdout.csv")
         Y_train.to_csv("datasets/df_target.csv")
         Y_holdout.to_csv("datasets/df_target_holdout.csv")
+
+# Inicializa y devuelve los datasets df_features y df_target
+# con los datos de datasets/df_features.csv y datasets/df_target.csv
+# fecha_to_int indica si las fechas de la feature 'dia' se deben convertir
+# a enteros o si se deben dejar sin modicacion
+def get_datasets(fecha_to_int=True):
+    initialize_dataset()
+    df_features = pd.read_csv("datasets/df_features.csv", low_memory = False, index_col = "id")
+    df_target = pd.read_csv("datasets/df_target.csv", low_memory=False, index_col = "id")
+
+    common(df_features, df_target, fecha_to_int)
+    return df_features, df_target
 
 # Preprocessing común para todos los modelos. Las transformaciones que hace son:
 # * Dropear la columna llovieron_hamburguesas_hoy (dependiente de mm_lluvia_dia)
@@ -235,8 +246,11 @@ def standarizer(pipe = None):
     return _pipe(pipe, ('scaler', StandardScaler()))
 
 # Agrega un IterativeImputer a la pipe (imputer de missings a partir de regresiones iterativas)
-def iterative_imputer(pipe= None):
-    return _pipe(pipe, ('imputer', IterativeImputer(random_state = 123)))
+def iterative_imputer(pipe= None, max_iter=10):
+    return _pipe(pipe, ('imputer', IterativeImputer(max_iter=max_iter, random_state = 123)))
+
+def knn_imputer(pipe= None):
+    return _pipe(pipe, ("imputer", KNNImputer(weights="distance", copy=False)))
 
 # Dropea features categóricas (Si se ejecutó viento_trigonométrico(), solo droppea el barrio)
 def drop_categoricas(df):
@@ -264,4 +278,17 @@ def drop_correlacionadas(df):
 # Dropea las nubosidades
 def drop_discretas(df):
     df.drop(columns=["nubosidad_temprano", "nubosidad_tarde"], inplace=True)
+    return df
+
+# Dropea las columnas que no se consideran importantes
+# para un determinado modelo (un score menor o igual al threshold)
+# Los scores deben estar en el mismo orden que las features
+# del dataset
+def drop_poco_importantes(df, scores, threshold):
+    features_a_eliminar = []
+    for feature, score in zip(df.columns, scores):
+        if score <= threshold:
+            features_a_eliminar.append(feature)
+    
+    df.drop(columns=features_a_eliminar, inplace=True)
     return df

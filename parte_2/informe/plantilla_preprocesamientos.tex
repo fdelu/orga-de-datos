@@ -10,9 +10,14 @@ Drop de \textit{llovieron\_hamburguesas\_hoy} \newline
 Reemplazar \textit{si} y \textit{no} por 1 y 0 en variable target \newline
 Drop de muestras con missings en variable target \newline
 Drop de muestras con datos inválidos \newline
-Corrección de typos en nombres de features
+Corrección de typos en nombres de features \newline
+Si el parámetro \textbf{fecha\_to\_int} es True, convierte \textit{dia} en un entero con formato AAAAMMDD
 &
 \textbf{common()} \\
+\hline
+Día a mes &
+Convierte \textit{dia} en el mes correspondiente a la fecha &
+\textbf{dia\_a\_mes()} \\
 \hline
 Viento trigonométrico &
 Convierte las features de dirección del viento en pares de features $\langle\sin{\theta},\cos{\theta}\rangle$, donde $\theta$ es el ángulo de dicha dirección &
@@ -37,6 +42,10 @@ Dropea las features categóricas del dataset (Si se ejecutó el preprocesamiento
 Hashing trick &
 Transforma una feature categórica en varias columnas con valores 0 o 1 a partir de un vector obtenido con una función de hash sobre la variable &
 \textbf{drop\_categoricas()} \\
+\hline
+Drop poco importantes &
+Dado una lista de scores y un threshold, dropea las features cuyos scores (importancia de feature) sea menor al threshold &
+\textbf{drop\_poco\_importantes()} \\
 \hline
 \caption{Preprocesamientos} \\
 \end{longtable}
