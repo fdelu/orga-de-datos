@@ -138,7 +138,7 @@ def common(df_features, df_target, fecha_to_int = True):
     df_features.drop(drop_index, inplace=True)
     df_target.drop(drop_index, inplace=True)
     
-    df_features.presion_atmosferica_tarde.astype(np.float64, copy=False)
+    df_features.presion_atmosferica_tarde = df_features.presion_atmosferica_tarde.astype(np.float64, copy=False)
     df_features.astype({
         "barrio": "category",
         "direccion_viento_tarde": "category",
