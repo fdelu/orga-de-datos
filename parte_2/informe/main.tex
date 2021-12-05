@@ -80,6 +80,15 @@
 %
 %\usepackage{threeparttable}
 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
 %------------------------------ graphicx ----------------------------------
 %
 % Para incluir imágenes, el siguiente código carga el paquete graphicx 
@@ -201,9 +210,54 @@
 	
 	\restoregeometry
 	
-	
-	
 	\pagebreak
+
+	\section{Conclusión}
+	De todos los modelos entrenados, los dos que resultaron ser mejores 
+	fueron la red neuronal y el ensamble en cascada. En ambos casos su
+	AUC-ROC fue de 0.895, lo cual es bastante aceptable. Si tuvieramos que
+	elegir uno, nos decantaríamos por la red neuronal, ya que es el modelo
+	más sencillo de los dos: el cascading ya de por sí tiene como uno de los
+	modelos que utiliza a la misma red.
+
+	La baseline que hicimos a partir del análisis de los datos tenía un
+	accuracy de alrededor de $83\%$. Podemos ver que esta métrica fue
+	ampliamente superada por casi todos los modelos (exceptuando el
+	perceptrón y Naive Bayes), por lo que los resultados fueron bastante
+	positivos.
+
+	Algo a notar es que todos los modelos tienen un Recall bastante bajo.
+	El Recall es una métrica que responde a la pregunta: de las instancias
+	positivas, ¿qué porcentaje fueron clasificadas correctamente?. Debido
+	a que el dataset utilizado estaba bastante desbalanceado, todos los modelos
+	tendieron a aprender a responder por la negativa. Esto provocó que haya
+	una gran cantidad de falsos negativos, lo que es la causa de que esta métrica
+	haya dado tan baja.
+
+	Si tuvieramos que elegir el modelo con la menor cantidad de falsos positivos,
+	eligiríamos el que tiene el Precision más alto, que responde a la pregunta:
+	de los detectadaos como positivos, ¿qué porcentaje realmente lo eran?. Entonces,
+	a Precision más alto, menor cantidad de falsos positivos. En este caso, el
+	modelo con Precision más alto resultó ser el \textit{AdaBoostClassifier}. Podemos
+	notar que esa ganancia no fue gratuita: perdió mucho en Recall.
+
+	Si necesitaramos una lista de los potenciales días que vayan a llover, es decir,
+	minimizar los falsos negativos, volveríamos al problema del Recall. El modelo
+	con mejor Recall en este caso es Naive Bayes. Nuevamente, pierde mucho en otras
+	métricas: es el segundo peor modelo en nuestra lista ordenada por AUC-ROC. De
+	todas formas, los modelos encontrados tienen todos un Recall exageradamente bajo, y
+	si realmente necesitaramos tener pocos falsos negativos, probablemente intentaramos
+	con modelos nuevos o incluso pensamos que sería mejor un modelo que responda siempre
+	que 'si' antes que los que pudimos entrenar.
+
+	Podemos también considerar que a la hora de entrenar los modelos, se optimizó para 
+	maximizar la métrica de AUC-ROC. Si nos encontraramos en los 2 casos hipotéticos
+	descritos en los párrafos anteriores, probablemente hubieramos elegido otros
+	hiperpárametros en los modelos a entrenar. Por ejemplo, en el notebook del 
+	árbol de decisión, si elegíamos el parámetro de \textit{class\_weight} = 
+	``\textit{balanced}'', daba bastante mejor Recall que en el que terminó quedando en la
+	 tabla anterior.
+
 	
 \end{document}
 
