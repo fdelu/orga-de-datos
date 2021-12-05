@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.18)  25 NOV 2021 23:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.18)  4 DEC 2021 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -397,7 +397,7 @@ Missing character: There is no 7 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 ! Misplaced alignment tab character &.
 l.14 0.870 &
-            
+             0.849 & 0.763 & 0.470 & 0.582 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -411,8 +411,8 @@ Missing character: There is no 8 in font nullfont!
 Missing character: There is no 4 in font nullfont!
 Missing character: There is no 9 in font nullfont!
 ! Misplaced alignment tab character &.
-l.15 0.849 &
-            
+l.14 0.870 & 0.849 &
+                     0.763 & 0.470 & 0.582 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -426,8 +426,8 @@ Missing character: There is no 7 in font nullfont!
 Missing character: There is no 6 in font nullfont!
 Missing character: There is no 3 in font nullfont!
 ! Misplaced alignment tab character &.
-l.16 0.763 &
-            
+l.14 0.870 & 0.849 & 0.763 &
+                             0.470 & 0.582 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -441,8 +441,8 @@ Missing character: There is no 4 in font nullfont!
 Missing character: There is no 7 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 ! Misplaced alignment tab character &.
-l.17 0.470 &
-            
+l.14 0.870 & 0.849 & 0.763 & 0.470 &
+                                     0.582 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -458,33 +458,33 @@ Missing character: There is no 2 in font nullfont!
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.19 \hline
+l.15 \hline
            
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 8--19
+Overfull \hbox (20.0pt too wide) in paragraph at lines 8--15
 []
  []
 
 
-Overfull \hbox (10.55559pt too wide) in paragraph at lines 8--19
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 8--15
 \/cmr/m/n/10 ^^Su
  []
 
 
-Overfull \hbox (97.95314pt too wide) in paragraph at lines 8--19
+Overfull \hbox (97.95314pt too wide) in paragraph at lines 8--15
 \/cmr/m/n/10 ([])$ 
  []
 
 
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 8--19
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 8--15
 \/cmr/m/n/10 ^^Se 
  []
 
 
-Overfull \hbox (2.77779pt too wide) in paragraph at lines 8--19
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 8--15
 \/cmr/m/n/10 ^^S^^P
  []
 
@@ -495,7 +495,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.20 R
+l.16 R
       andomForestClassifier &
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -523,7 +523,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 ! Misplaced alignment tab character &.
-l.20 RandomForestClassifier &
+l.16 RandomForestClassifier &
                              
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -608,7 +608,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no o in font nullfont!
 ! Misplaced alignment tab character &.
-l.26 Imputador iterativo &
+l.22 Imputador iterativo &
                           
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -623,8 +623,8 @@ Missing character: There is no 8 in font nullfont!
 Missing character: There is no 8 in font nullfont!
 Missing character: There is no 9 in font nullfont!
 ! Misplaced alignment tab character &.
-l.27 0.889 &
-            
+l.23 0.889 &
+             0.859 & 0.764 & 0.538 & 0.631 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -638,8 +638,8 @@ Missing character: There is no 8 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no 9 in font nullfont!
 ! Misplaced alignment tab character &.
-l.28 0.859 &
-            
+l.23 0.889 & 0.859 &
+                     0.764 & 0.538 & 0.631 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -653,8 +653,8 @@ Missing character: There is no 7 in font nullfont!
 Missing character: There is no 6 in font nullfont!
 Missing character: There is no 4 in font nullfont!
 ! Misplaced alignment tab character &.
-l.29 0.764 &
-            
+l.23 0.889 & 0.859 & 0.764 &
+                             0.538 & 0.631 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -668,8 +668,8 @@ Missing character: There is no 5 in font nullfont!
 Missing character: There is no 3 in font nullfont!
 Missing character: There is no 8 in font nullfont!
 ! Misplaced alignment tab character &.
-l.30 0.538 &
-            
+l.23 0.889 & 0.859 & 0.764 & 0.538 &
+                                     0.631 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -685,43 +685,43 @@ Missing character: There is no 1 in font nullfont!
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.32 \hline
+l.24 \hline
            
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 20--32
+Overfull \hbox (20.0pt too wide) in paragraph at lines 16--24
 []
  []
 
 
-Overfull \hbox (5.55557pt too wide) in paragraph at lines 20--32
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 16--24
 \/cmr/m/n/10 ^^Su
  []
 
 
-Overfull \hbox (97.95314pt too wide) in paragraph at lines 20--32
+Overfull \hbox (97.95314pt too wide) in paragraph at lines 16--24
 \/cmr/m/n/10 ([])$ 
  []
 
 
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 20--32
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 16--24
 \/cmr/m/n/10 ^^Se 
  []
 
 
-Overfull \hbox (2.77779pt too wide) in paragraph at lines 20--32
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 16--24
 \/cmr/m/n/10 ^^S^^P
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 20--32
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 16--24
 \/cmr/m/n/10 ^^So 
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 20--32
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 16--24
 \/cmr/m/n/10 ^^So 
  []
 
@@ -732,7 +732,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 S
+l.25 S
       VM &
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -741,7 +741,7 @@ Missing character: There is no S in font nullfont!
 Missing character: There is no V in font nullfont!
 Missing character: There is no M in font nullfont!
 ! Misplaced alignment tab character &.
-l.33 SVM &
+l.25 SVM &
           
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -827,7 +827,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no ) in font nullfont!
 ! Misplaced alignment tab character &.
-l.38 Hashing trick (feature \textbf{barrio}) &
+l.30 Hashing trick (feature \textbf{barrio}) &
                                               
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -842,8 +842,8 @@ Missing character: There is no 8 in font nullfont!
 Missing character: There is no 8 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 ! Misplaced alignment tab character &.
-l.39 0.880 &
-            
+l.31 0.880 &
+             0.856 & 0.793 & 0.487 & 0.604 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -857,8 +857,8 @@ Missing character: There is no 8 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no 6 in font nullfont!
 ! Misplaced alignment tab character &.
-l.40 0.856 &
-            
+l.31 0.880 & 0.856 &
+                     0.793 & 0.487 & 0.604 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -872,8 +872,8 @@ Missing character: There is no 7 in font nullfont!
 Missing character: There is no 9 in font nullfont!
 Missing character: There is no 3 in font nullfont!
 ! Misplaced alignment tab character &.
-l.41 0.793 &
-            
+l.31 0.880 & 0.856 & 0.793 &
+                             0.487 & 0.604 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -887,8 +887,8 @@ Missing character: There is no 4 in font nullfont!
 Missing character: There is no 8 in font nullfont!
 Missing character: There is no 7 in font nullfont!
 ! Misplaced alignment tab character &.
-l.42 0.487 &
-            
+l.31 0.880 & 0.856 & 0.793 & 0.487 &
+                                     0.604 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -904,38 +904,38 @@ Missing character: There is no 4 in font nullfont!
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.44 \hline
+l.32 \hline
            
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 33--44
+Overfull \hbox (20.0pt too wide) in paragraph at lines 25--32
 []
  []
 
 
-Overfull \hbox (5.55557pt too wide) in paragraph at lines 33--44
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 25--32
 \/cmr/m/n/10 ^^Su 
  []
 
 
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 33--44
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 25--32
 \/cmr/m/n/10 ^^Se 
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 33--44
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 25--32
 \/cmr/m/n/10 ^^So 
  []
 
 
-Overfull \hbox (20.5485pt too wide) in paragraph at lines 33--44
+Overfull \hbox (20.5485pt too wide) in paragraph at lines 25--32
 \OT1/cmr/bx/n/10 bar-
  []
 
 
-Overfull \hbox (13.6805pt too wide) in paragraph at lines 33--44
+Overfull \hbox (13.6805pt too wide) in paragraph at lines 25--32
 \OT1/cmr/bx/n/10 rio
  []
 
@@ -946,7 +946,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.45 N
+l.33 N
       aive Bayes &
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -962,7 +962,7 @@ Missing character: There is no y in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Misplaced alignment tab character &.
-l.45 Naive Bayes &
+l.33 Naive Bayes &
                   
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1027,7 +1027,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no o in font nullfont!
 ! Misplaced alignment tab character &.
-l.49 Imputador iterativo &
+l.37 Imputador iterativo &
                           
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1042,8 +1042,8 @@ Missing character: There is no 8 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 ! Misplaced alignment tab character &.
-l.50 0.850 &
-            
+l.38 0.850 &
+             0.832 & 0.644 & 0.565 & 0.602 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1057,8 +1057,8 @@ Missing character: There is no 8 in font nullfont!
 Missing character: There is no 3 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 ! Misplaced alignment tab character &.
-l.51 0.832 &
-            
+l.38 0.850 & 0.832 &
+                     0.644 & 0.565 & 0.602 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1072,8 +1072,8 @@ Missing character: There is no 6 in font nullfont!
 Missing character: There is no 4 in font nullfont!
 Missing character: There is no 4 in font nullfont!
 ! Misplaced alignment tab character &.
-l.52 0.644 &
-            
+l.38 0.850 & 0.832 & 0.644 &
+                             0.565 & 0.602 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1087,8 +1087,8 @@ Missing character: There is no 5 in font nullfont!
 Missing character: There is no 6 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 ! Misplaced alignment tab character &.
-l.53 0.565 &
-            
+l.38 0.850 & 0.832 & 0.644 & 0.565 &
+                                     0.602 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1104,28 +1104,28 @@ Missing character: There is no 2 in font nullfont!
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.55 \hline
+l.39 \hline
            
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 45--55
+Overfull \hbox (20.0pt too wide) in paragraph at lines 33--39
 []
  []
 
 
-Overfull \hbox (5.55557pt too wide) in paragraph at lines 45--55
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 33--39
 \/cmr/m/n/10 ^^Su 
  []
 
 
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 45--55
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 33--39
 \/cmr/m/n/10 ^^Se 
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 45--55
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 33--39
 \/cmr/m/n/10 ^^So 
  []
 
@@ -1136,7 +1136,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56 K
+l.40 K
       NN &
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1145,7 +1145,7 @@ Missing character: There is no K in font nullfont!
 Missing character: There is no N in font nullfont!
 Missing character: There is no N in font nullfont!
 ! Misplaced alignment tab character &.
-l.56 KNN &
+l.40 KNN &
           
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1231,7 +1231,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no ) in font nullfont!
 ! Misplaced alignment tab character &.
-l.61 Hashing trick (feature \textbf{barrio}) &
+l.45 Hashing trick (feature \textbf{barrio}) &
                                               
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1246,8 +1246,8 @@ Missing character: There is no 8 in font nullfont!
 Missing character: There is no 7 in font nullfont!
 Missing character: There is no 3 in font nullfont!
 ! Misplaced alignment tab character &.
-l.62 0.873 &
-            
+l.46 0.873 &
+             0.838 & 0.805 & 0.365 & 0.503 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1261,8 +1261,8 @@ Missing character: There is no 8 in font nullfont!
 Missing character: There is no 3 in font nullfont!
 Missing character: There is no 8 in font nullfont!
 ! Misplaced alignment tab character &.
-l.63 0.838 &
-            
+l.46 0.873 & 0.838 &
+                     0.805 & 0.365 & 0.503 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1276,8 +1276,8 @@ Missing character: There is no 8 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 ! Misplaced alignment tab character &.
-l.64 0.805 &
-            
+l.46 0.873 & 0.838 & 0.805 &
+                             0.365 & 0.503 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1291,8 +1291,8 @@ Missing character: There is no 3 in font nullfont!
 Missing character: There is no 6 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 ! Misplaced alignment tab character &.
-l.65 0.365 &
-            
+l.46 0.873 & 0.838 & 0.805 & 0.365 &
+                                     0.503 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1308,38 +1308,38 @@ Missing character: There is no 3 in font nullfont!
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.67 \hline
+l.47 \hline
            
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 56--67
+Overfull \hbox (20.0pt too wide) in paragraph at lines 40--47
 []
  []
 
 
-Overfull \hbox (5.55557pt too wide) in paragraph at lines 56--67
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 40--47
 \/cmr/m/n/10 ^^Su 
  []
 
 
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 56--67
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 40--47
 \/cmr/m/n/10 ^^Se 
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 56--67
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 40--47
 \/cmr/m/n/10 ^^So 
  []
 
 
-Overfull \hbox (20.5485pt too wide) in paragraph at lines 56--67
+Overfull \hbox (20.5485pt too wide) in paragraph at lines 40--47
 \OT1/cmr/bx/n/10 bar-
  []
 
 
-Overfull \hbox (13.6805pt too wide) in paragraph at lines 56--67
+Overfull \hbox (13.6805pt too wide) in paragraph at lines 40--47
 \OT1/cmr/bx/n/10 rio
  []
 
@@ -1350,7 +1350,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.68 P
+l.48 P
       erceptrón &
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1365,7 +1365,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Misplaced alignment tab character &.
-l.68 Perceptrón &
+l.48 Perceptrón &
                   
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1510,15 +1510,6 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no o in font nullfont!
-! Undefined control sequence.
-l.73 Imputador iterativo \newlin
-                                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 Missing character: There is no E in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -1534,7 +1525,7 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Misplaced alignment tab character &.
-l.74 Estandarización &
+l.54 Estandarización &
                        
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1549,8 +1540,8 @@ Missing character: There is no 8 in font nullfont!
 Missing character: There is no 3 in font nullfont!
 Missing character: There is no 3 in font nullfont!
 ! Misplaced alignment tab character &.
-l.75 0.833 &
-            
+l.55 0.833 &
+             0.820 & 0.770 & 0.282 & 0.413 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1564,8 +1555,8 @@ Missing character: There is no 8 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 ! Misplaced alignment tab character &.
-l.76 0.820 &
-            
+l.55 0.833 & 0.820 &
+                     0.770 & 0.282 & 0.413 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1579,8 +1570,8 @@ Missing character: There is no 7 in font nullfont!
 Missing character: There is no 7 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 ! Misplaced alignment tab character &.
-l.77 0.770 &
-            
+l.55 0.833 & 0.820 & 0.770 &
+                             0.282 & 0.413 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1594,8 +1585,8 @@ Missing character: There is no 2 in font nullfont!
 Missing character: There is no 8 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 ! Misplaced alignment tab character &.
-l.78 0.282 &
-            
+l.55 0.833 & 0.820 & 0.770 & 0.282 &
+                                     0.413 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1611,33 +1602,248 @@ Missing character: There is no 3 in font nullfont!
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.80 \hline
+l.56 \hline
            
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Overfull \hbox (25.00002pt too wide) in paragraph at lines 68--80
+Overfull \hbox (25.00002pt too wide) in paragraph at lines 48--56
 []\/cmr/m/n/10 ^^So
  []
 
 
-Overfull \hbox (5.55557pt too wide) in paragraph at lines 68--80
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 48--56
 \/cmr/m/n/10 ^^Su 
  []
 
 
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 68--80
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 48--56
 \/cmr/m/n/10 ^^Se 
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 68--80
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 48--56
 \/cmr/m/n/10 ^^So
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 68--80
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 48--56
+\/cmr/m/n/10 ^^So
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 A
+      daBoostClassifier &
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+! Misplaced alignment tab character &.
+l.57 AdaBoostClassifier &
+                         
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+! Misplaced alignment tab character &.
+l.62 Estandarización &
+                       
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+! Misplaced alignment tab character &.
+l.63 0.894 &
+             0.861 & 0.806 & 0.498 & 0.615 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Misplaced alignment tab character &.
+l.63 0.894 & 0.861 &
+                     0.806 & 0.498 & 0.615 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+! Misplaced alignment tab character &.
+l.63 0.894 & 0.861 & 0.806 &
+                             0.498 & 0.615 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+! Misplaced alignment tab character &.
+l.63 0.894 & 0.861 & 0.806 & 0.498 &
+                                     0.615 \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.64 \hline
+           
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 57--64
+[]
+ []
+
+
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 57--64
+\/cmr/m/n/10 ^^Su
+ []
+
+
+Overfull \hbox (97.95314pt too wide) in paragraph at lines 57--64
+\/cmr/m/n/10 ([])$ 
+ []
+
+
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 57--64
+\/cmr/m/n/10 ^^Se 
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 57--64
 \/cmr/m/n/10 ^^So
  []
 
@@ -1648,7 +1854,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 \caption
+l.65 \caption
              {Métricas de los modelos} \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1660,7 +1866,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 \caption{M
+l.65 \caption{M
                étricas de los modelos} \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1691,7 +1897,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 \end{longtable}
+l.66 \end{longtable}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,

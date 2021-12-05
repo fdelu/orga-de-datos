@@ -11,72 +11,64 @@ Viento trigonométrico \newline
 Barrios a comunas \newline
 Día a mes \newline
 Imputador iterativo &
-0.870 &
-0.849 &
-0.763 &
-0.470 &
-0.582 \\
+0.870 & 0.849 & 0.763 & 0.470 & 0.582 \\
 \hline
 RandomForestClassifier &
-Común $(\textbf{fecha\_to\_int=True})$ \newline
+Común $(\textbf{fecha\_to\_int=False})$ \newline
 Viento trigonométrico \newline
 Día a mes \newline
 Drop categóricas \newline
 Estandarización \newline
 Imputador iterativo &
-0.889 &
-0.859 &
-0.764 &
-0.538 &
-0.631 \\
+0.889 & 0.859 & 0.764 & 0.538 & 0.631 \\
 \hline
 SVM &
-Común \newline
+Común $(\textbf{fecha\_to\_int=True})$ \newline
 Viento trigonométrico \newline
 Estandarización \newline
 Imputador iterativo \newline
 Hashing trick (feature \textbf{barrio}) &
-0.880 &
-0.856 &
-0.793 &
-0.487 &
-0.604 \\
+0.880 & 0.856 & 0.793 & 0.487 & 0.604 \\
 \hline
 Naive Bayes &
-Común \newline
+Común $(\textbf{fecha\_to\_int=True})$ \newline
 Viento trigonométrico \newline
 Drop categóricas \newline
 Imputador iterativo &
-0.850 &
-0.832 &
-0.644 &
-0.565 &
-0.602 \\
+0.850 & 0.832 & 0.644 & 0.565 & 0.602 \\
 \hline
 KNN &
-Común \newline
+Común $(\textbf{fecha\_to\_int=True})$ \newline
 Viento trigonométrico \newline
 Estandarización \newline
 Imputador iterativo \newline
 Hashing trick (feature \textbf{barrio}) &
-0.873 &
-0.838 &
-0.805 &
-0.365 &
-0.503 \\
+0.873 & 0.838 & 0.805 & 0.365 & 0.503 \\
 \hline
 Perceptrón &
-Común \newline
+Común $(\textbf{fecha\_to\_int=True})$ \newline
 Viento trigonométrico \newline
 Barrios a comunas \newline
 Drop poco importantes (todas las features que tuvieron coeficientes 0 en un perceptrón previo) \newline
 Imputador iterativo \newline
 Estandarización &
-0.833 &
-0.820 &
-0.770 &
-0.282 &
-0.413 \\
+0.833 & 0.820 & 0.770 & 0.282 & 0.413 \\
+\hline
+AdaBoostClassifier &
+Común $(\textbf{fecha\_to\_int=True})$ \newline
+Barrios a comunas \newline
+Viento trigonométrico \newline
+Imputador simple \newline
+Estandarización &
+0.894 & 0.861 & 0.806 & 0.498 & 0.615 \\
+\hline
+CascadingClassifier &
+Común $(\textbf{fecha\_to\_int=True})$ \newline
+Viento trigonométrico \newline
+Hashing Trick (feature \textbf{barrio}) \newline
+Imputador iterativo \newline
+Estandarización &
+0.895 & 0.862 & 0.778 & 0.538 & 0.636 \\
 \hline
 \caption{Métricas de los modelos} \\
 \end{longtable}
