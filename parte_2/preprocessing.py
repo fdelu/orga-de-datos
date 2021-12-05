@@ -91,6 +91,12 @@ def initialize_dataset():
         ) as r, open("datasets/df_all_target.csv", "wb") as f:
             for chunk in r.iter_content():
                 f.write(chunk)
+    if not exists("datasets/df_extra.csv"):           
+        with requests.get(
+            "https://docs.google.com/spreadsheets/d/1mR_JNN0-ceiB5qV42Ff9hznz0HtWaoPF3B9zNGoNPY8/export?format=csv"
+        ) as r, open("datasets/df_extra.csv", "wb") as f:
+            for chunk in r.iter_content():
+                f.write(chunk)
 
     if not exists("datasets/df_features.csv") or not exists("datasets/df_features_holdout.csv") or \
     not exists("datasets/df_target.csv") or not exists("datasets/df_target_holdout.csv"):
@@ -122,21 +128,29 @@ def get_datasets(fecha_to_int=True):
 # * Dropear las instancias con nubosidad = 9 y presiones inválidas (menos de 10)
 # * Dropear las instancias con missings en la variable target, ya que no proveen información
 # * Corregir typos y asignar tipos de datos correctos
-def common(df_features, df_target, fecha_to_int = True):
+def common(df_features, df_target = None, fecha_to_int = True):
     df_features.drop(columns=["llovieron_hamburguesas_hoy"], inplace=True, errors="ignore") # Era dependiente de otra feature
-    df_target.replace({'llovieron_hamburguesas_al_dia_siguiente': {"si": 1, "no": 0 }},
-       inplace = True)
-    df_target.llovieron_hamburguesas_al_dia_siguiente.astype(np.float64, copy=False)
+    if df_target is not None:
+        df_target.replace({'llovieron_hamburguesas_al_dia_siguiente': {"si": 1, "no": 0 }},
+           inplace = True)
+        df_target.llovieron_hamburguesas_al_dia_siguiente.astype(np.float64, copy=False)
+        
     if fecha_to_int:
         df_features.dia = df_features.dia.str.replace("-","").astype(np.uint64)
     
-    drop_index = df_features[(df_features.nubosidad_temprano == 9) | (df_features.nubosidad_tarde == 9) | \
-                            (df_features.presion_atmosferica_tarde == "1.009.555") | \
-                            (df_features.presion_atmosferica_tarde == "10.167.769.999.999.900") | \
-                             df_target.llovieron_hamburguesas_al_dia_siguiente.isna()
-                            ].index
+    dropped = (df_features.nubosidad_temprano == 9) | (df_features.nubosidad_tarde == 9) | \
+              (df_features.presion_atmosferica_tarde == "1.009.555") | \
+              (df_features.presion_atmosferica_tarde == "10.167.769.999.999.900")
+    
+    if df_target is not None:
+        dropped = dropped | df_target.llovieron_hamburguesas_al_dia_siguiente.isna()
+    
+    drop_index = df_features[dropped].index
+    
+    if df_target is not None:
+        df_target.drop(drop_index, inplace=True)
+        
     df_features.drop(drop_index, inplace=True)
-    df_target.drop(drop_index, inplace=True)
     
     df_features.presion_atmosferica_tarde = df_features.presion_atmosferica_tarde.astype(np.float64, copy=False)
     df_features.astype({
