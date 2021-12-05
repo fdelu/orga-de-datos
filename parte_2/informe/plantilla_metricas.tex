@@ -30,11 +30,12 @@ Imputador iterativo \newline
 Hashing trick (feature \textbf{barrio}) &
 0.882 & 0.857 & 0.794 & 0.491 & 0.607 \\
 \hline
-Naive Bayes &
+NB (Naive Bayes) &
 Común $(\textbf{fecha\_to\_int=True})$ \newline
 Viento trigonométrico \newline
 Drop categóricas \newline
-Imputador iterativo &
+Imputador iterativo \newline
+Feature selection $(\textbf{n = 0.6})$&
 0.850 & 0.832 & 0.644 & 0.565 & 0.602 \\
 \hline
 KNN &
@@ -69,6 +70,14 @@ Hashing Trick (feature \textbf{barrio}) \newline
 Imputador iterativo \newline
 Estandarización &
 0.895 & 0.862 & 0.778 & 0.538 & 0.636 \\
+\hline
+NeuralNetwork &
+Común $(\textbf{fecha\_to\_int=True})$ \newline
+Viento trigonométrico \newline
+Hashing Trick (feature \textbf{barrio}) \newline
+Imputador iterativo \newline
+Estandarización &
+0.895 & 0.860 & 0.774 & 0.529 & 0.629 \\
 \hline
 \caption{Métricas de los modelos} \\
 \end{longtable}

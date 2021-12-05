@@ -13,6 +13,7 @@ from sklearn.decomposition import PCA
 from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import IterativeImputer, SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.feature_selection import SequentialFeatureSelector
 
 variables_numericas = [
     "temp_min",
@@ -306,3 +307,9 @@ def drop_poco_importantes(df, scores, threshold):
     
     df.drop(columns=features_a_eliminar, inplace=True)
     return df
+
+def feature_selection(model, scoring, X, Y):
+    sel = SequentialFeatureSelector(model, n_jobs = -1, \
+          scoring = scoring, n_features_to_select = 0.6, direction = "forward", cv = 3)
+    sel.fit(X, Y)
+    return sel.support_
