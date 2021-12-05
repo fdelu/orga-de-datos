@@ -1,18 +1,38 @@
 \newcolumntype{Y}{>{\small\raggedright\arraybackslash}X}
 \renewcommand{\arraystretch}{1.5}
 \noindent
-\begin{longtable}{|>{\setlength\hsize{0.25\hsize}}X|>{\setlength\hsize{0.32\hsize}}X|>{\setlength\hsize{0.07\hsize}}X|>{\setlength\hsize{0.09\hsize}}X|>{\setlength\hsize{0.09\hsize}}X|>{\setlength\hsize{0.09\hsize}}X|>{\setlength\hsize{0.09\hsize}}X|}
+\begin{longtable}{|>{\setlength\hsize{0.02\hsize}}X|>{\setlength\hsize{0.23\hsize}}X|>{\setlength\hsize{0.32\hsize}}X|>{\setlength\hsize{0.07\hsize}}X|>{\setlength\hsize{0.09\hsize}}X|>{\setlength\hsize{0.09\hsize}}X|>{\setlength\hsize{0.09\hsize}}X|>{\setlength\hsize{0.09\hsize}}X|}
 \hline
-Nombre del modelo & Preprocesamiento & AUC \newline ROC & Accuracy & Precision & Recall & F1 score \\
+\# & Nombre del modelo & Preprocesamiento & AUC \newline ROC & Accuracy & Precision & Recall & F1 score \\
 \hline
-DecisionTreeClassifier &
+1 & 
+NeuralNetwork &
 Común $(\textbf{fecha\_to\_int=True})$ \newline
 Viento trigonométrico \newline
-Barrios a comunas \newline
-Día a mes \newline
-Imputador iterativo &
-0.870 & 0.849 & 0.763 & 0.470 & 0.582 \\
+Hashing Trick (feature \textbf{barrio}) \newline
+Imputador iterativo \newline
+Estandarización &
+0.895 & 0.860 & 0.774 & 0.529 & 0.629 \\
 \hline
+2 & 
+CascadingClassifier &
+Común $(\textbf{fecha\_to\_int=True})$ \newline
+Viento trigonométrico \newline
+Hashing Trick (feature \textbf{barrio}) \newline
+Imputador iterativo \newline
+Estandarización &
+0.895 & 0.862 & 0.778 & 0.538 & 0.636 \\
+\hline
+3 & 
+AdaBoostClassifier &
+Común $(\textbf{fecha\_to\_int=True})$ \newline
+Barrios a comunas \newline
+Viento trigonométrico \newline
+Imputador simple \newline
+Estandarización &
+0.894 & 0.861 & 0.806 & 0.498 & 0.615 \\
+\hline
+4 & 
 RandomForestClassifier &
 Común $(\textbf{fecha\_to\_int=False})$ \newline
 Viento trigonométrico \newline
@@ -22,6 +42,7 @@ Estandarización \newline
 Imputador iterativo &
 0.889 & 0.859 & 0.764 & 0.538 & 0.631 \\
 \hline
+5 & 
 SVM &
 Común $(\textbf{fecha\_to\_int=True})$ \newline
 Viento trigonométrico \newline
@@ -30,14 +51,7 @@ Imputador iterativo \newline
 Hashing trick (feature \textbf{barrio}) &
 0.882 & 0.857 & 0.794 & 0.491 & 0.607 \\
 \hline
-NB (Naive Bayes) &
-Común $(\textbf{fecha\_to\_int=True})$ \newline
-Viento trigonométrico \newline
-Drop categóricas \newline
-Imputador iterativo \newline
-Feature selection $(\textbf{n = 0.6})$&
-0.850 & 0.832 & 0.644 & 0.565 & 0.602 \\
-\hline
+6 & 
 KNN &
 Común $(\textbf{fecha\_to\_int=True})$ \newline
 Viento trigonométrico \newline
@@ -46,6 +60,25 @@ Imputador iterativo \newline
 Hashing trick (feature \textbf{barrio}) &
 0.873 & 0.838 & 0.805 & 0.365 & 0.503 \\
 \hline
+7 & 
+DecisionTreeClassifier &
+Común $(\textbf{fecha\_to\_int=True})$ \newline
+Viento trigonométrico \newline
+Barrios a comunas \newline
+Día a mes \newline
+Imputador iterativo &
+0.870 & 0.849 & 0.763 & 0.470 & 0.582 \\
+\hline
+8 & 
+NB (Naive Bayes) &
+Común $(\textbf{fecha\_to\_int=True})$ \newline
+Viento trigonométrico \newline
+Drop categóricas \newline
+Imputador iterativo \newline
+Feature selection $(\textbf{n = 0.6})$&
+0.850 & 0.832 & 0.644 & 0.565 & 0.602 \\
+\hline
+9 & 
 Perceptrón &
 Común $(\textbf{fecha\_to\_int=True})$ \newline
 Viento trigonométrico \newline
@@ -54,30 +87,6 @@ Drop poco importantes (todas las features que tuvieron coeficientes 0 en un perc
 Imputador iterativo \newline
 Estandarización &
 0.833 & 0.820 & 0.770 & 0.282 & 0.413 \\
-\hline
-AdaBoostClassifier &
-Común $(\textbf{fecha\_to\_int=True})$ \newline
-Barrios a comunas \newline
-Viento trigonométrico \newline
-Imputador simple \newline
-Estandarización &
-0.894 & 0.861 & 0.806 & 0.498 & 0.615 \\
-\hline
-CascadingClassifier &
-Común $(\textbf{fecha\_to\_int=True})$ \newline
-Viento trigonométrico \newline
-Hashing Trick (feature \textbf{barrio}) \newline
-Imputador iterativo \newline
-Estandarización &
-0.895 & 0.862 & 0.778 & 0.538 & 0.636 \\
-\hline
-NeuralNetwork &
-Común $(\textbf{fecha\_to\_int=True})$ \newline
-Viento trigonométrico \newline
-Hashing Trick (feature \textbf{barrio}) \newline
-Imputador iterativo \newline
-Estandarización &
-0.895 & 0.860 & 0.774 & 0.529 & 0.629 \\
 \hline
 \caption{Métricas de los modelos} \\
 \end{longtable}
