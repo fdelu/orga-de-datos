@@ -49,7 +49,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 120160,no
 106452,no
 137441,no
-114323,si
+114323,no
 68455,no
 106902,no
 26374,no
@@ -66,7 +66,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 80188,no
 123259,no
 68430,no
-35328,si
+35328,no
 57462,no
 107917,no
 94279,no
@@ -189,7 +189,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 6416,no
 57232,si
 63789,no
-53373,si
+53373,no
 49722,no
 140021,si
 27678,si
@@ -269,7 +269,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 10444,si
 82936,no
 45786,no
-73878,no
+73878,si
 86666,no
 123258,no
 2379,no
@@ -279,7 +279,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 104861,no
 119348,no
 13785,no
-77626,si
+77626,no
 102452,no
 137180,no
 138013,no
@@ -362,7 +362,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 112664,no
 64454,no
 58590,no
-11302,no
+11302,si
 93387,si
 119191,no
 118612,no
@@ -384,7 +384,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 51403,no
 31396,no
 88473,no
-140382,no
+140382,si
 127706,si
 115221,no
 112875,no
@@ -532,7 +532,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 81543,si
 59192,no
 12275,no
-30202,no
+30202,si
 33385,no
 10436,si
 22823,no
@@ -680,12 +680,12 @@ id,llovieron_hamburguesas_al_dia_siguiente
 8090,no
 19409,no
 73121,no
-79481,no
+79481,si
 6268,no
 120657,no
 25734,no
 7235,no
-79001,si
+79001,no
 97955,no
 55793,no
 66514,no
@@ -763,7 +763,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 102240,no
 92435,no
 42105,no
-20266,si
+20266,no
 136900,no
 78791,no
 119203,no
@@ -909,7 +909,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 96530,no
 142020,no
 63377,no
-78893,si
+78893,no
 56227,no
 39359,si
 132667,no
@@ -1039,7 +1039,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 84787,si
 19978,si
 80128,no
-23004,si
+23004,no
 60819,no
 125128,no
 124790,no
@@ -1069,7 +1069,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 48139,no
 1287,si
 21673,no
-140058,no
+140058,si
 136321,no
 42551,no
 3085,si
@@ -1102,7 +1102,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 39546,no
 99363,no
 48630,no
-92104,no
+92104,si
 35238,no
 88523,no
 62943,no
@@ -1455,7 +1455,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 120456,no
 10671,no
 56021,no
-7482,si
+7482,no
 111402,no
 102186,si
 64336,no
@@ -1480,7 +1480,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 18535,no
 55269,no
 13672,no
-64423,si
+64423,no
 123893,no
 137568,no
 1069,no
@@ -1607,7 +1607,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 63249,no
 90389,no
 58108,no
-79061,si
+79061,no
 33120,no
 70962,no
 134722,si
@@ -1833,7 +1833,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 57858,si
 75186,si
 25509,no
-69614,si
+69614,no
 98078,si
 273,no
 17479,no
@@ -2152,7 +2152,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 19044,no
 52613,no
 1598,si
-52650,si
+52650,no
 126361,no
 35579,no
 103949,no
@@ -2160,7 +2160,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 25987,no
 127216,si
 32791,no
-64335,no
+64335,si
 137487,no
 39598,no
 118330,no
@@ -2348,7 +2348,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 75302,no
 113176,si
 31790,no
-112794,si
+112794,no
 47106,no
 2464,no
 37822,no
@@ -2636,7 +2636,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 9755,no
 139485,no
 74623,si
-75649,no
+75649,si
 10954,no
 49059,no
 41586,no
@@ -2917,7 +2917,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 79859,no
 15561,si
 9222,no
-43602,si
+43602,no
 97262,no
 1733,no
 61935,no
@@ -2959,7 +2959,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 23463,si
 128713,no
 44022,no
-66961,no
+66961,si
 79986,no
 71343,no
 142395,no
@@ -2979,7 +2979,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 56764,si
 48576,no
 141341,no
-32998,si
+32998,no
 85653,no
 93546,no
 34533,no
@@ -2991,7 +2991,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 84739,no
 58990,no
 108340,no
-9790,no
+9790,si
 25230,no
 61307,no
 75194,no
@@ -3015,7 +3015,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 131323,no
 35559,no
 13999,no
-133884,si
+133884,no
 5985,no
 103438,si
 17170,no
@@ -3189,7 +3189,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 46043,no
 47535,no
 130436,no
-5332,no
+5332,si
 87819,no
 140413,si
 108645,no
@@ -3493,7 +3493,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 90638,si
 105900,no
 54509,si
-48129,si
+48129,no
 132933,no
 116783,no
 122797,no
@@ -3627,7 +3627,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 19504,no
 144219,no
 53902,no
-43788,si
+43788,no
 123454,no
 130742,no
 30392,no
@@ -3682,7 +3682,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 129336,no
 6201,si
 90370,no
-38419,si
+38419,no
 122443,no
 14174,no
 57627,no
@@ -3812,7 +3812,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 103707,no
 92606,no
 43943,no
-78861,no
+78861,si
 47712,no
 103516,no
 6916,no
@@ -4057,7 +4057,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 30703,no
 46597,no
 86665,no
-133555,si
+133555,no
 11644,no
 67389,no
 23503,no
@@ -4254,7 +4254,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 108688,no
 124956,no
 30443,no
-118626,no
+118626,si
 111093,no
 15228,no
 100007,si
@@ -4987,7 +4987,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 125098,no
 24127,no
 122751,no
-2531,si
+2531,no
 74457,no
 82119,no
 55969,no
@@ -5042,7 +5042,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 108825,si
 49210,no
 6287,no
-101125,si
+101125,no
 109244,no
 93548,no
 86778,no
@@ -5199,7 +5199,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 6012,no
 56701,si
 40432,no
-115814,no
+115814,si
 72108,no
 19762,no
 56803,no
@@ -5264,7 +5264,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 54201,si
 6949,no
 118140,si
-44653,si
+44653,no
 88448,si
 60074,no
 10622,no
@@ -5345,7 +5345,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 96441,no
 132625,no
 84806,no
-76247,si
+76247,no
 90015,no
 42976,no
 143010,no
@@ -5398,7 +5398,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 43314,si
 31210,si
 65354,no
-136613,si
+136613,no
 137572,no
 78907,no
 1169,no
@@ -5522,7 +5522,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 56631,no
 99111,no
 13541,no
-78675,si
+78675,no
 30680,no
 15774,no
 88967,no
@@ -5636,7 +5636,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 139057,no
 139369,si
 143767,no
-43331,si
+43331,no
 46589,si
 59958,no
 13858,no
@@ -5708,7 +5708,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 45332,no
 96294,no
 43673,si
-61805,si
+61805,no
 35332,no
 67407,no
 6281,no
@@ -5939,7 +5939,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 97080,si
 104314,no
 44010,si
-110806,si
+110806,no
 81917,no
 85691,no
 121139,no
@@ -5969,7 +5969,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 110400,no
 21626,si
 95725,no
-55332,no
+55332,si
 14447,no
 49183,no
 128718,si
@@ -6006,7 +6006,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 65094,no
 103347,no
 25694,no
-83582,no
+83582,si
 98862,no
 123482,no
 3521,no
@@ -6124,14 +6124,14 @@ id,llovieron_hamburguesas_al_dia_siguiente
 105407,no
 24608,no
 10932,no
-93288,no
+93288,si
 36189,si
 143416,si
 51266,no
 41217,no
 68278,no
 128345,no
-44122,si
+44122,no
 119614,si
 24388,no
 36401,no
@@ -6144,7 +6144,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 41337,no
 240,no
 27315,no
-62234,si
+62234,no
 28320,no
 53642,no
 141276,no
@@ -6171,7 +6171,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 79553,no
 85832,no
 37980,si
-52473,si
+52473,no
 81687,no
 77065,no
 65443,no
@@ -6216,14 +6216,14 @@ id,llovieron_hamburguesas_al_dia_siguiente
 108104,no
 88945,no
 21914,no
-91956,no
+91956,si
 57817,no
 112634,no
 123072,no
 68906,si
 16559,no
 118597,si
-23282,no
+23282,si
 44314,no
 86773,no
 39608,no
@@ -6305,7 +6305,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 20353,si
 6134,no
 21488,no
-33717,no
+33717,si
 28195,si
 76564,no
 31155,no
@@ -6342,7 +6342,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 42816,no
 110419,no
 95704,no
-6891,si
+6891,no
 54661,no
 137247,no
 87541,no
@@ -6465,7 +6465,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 16114,no
 132944,no
 67270,no
-109437,no
+109437,si
 41991,no
 77134,no
 85608,no
@@ -6475,7 +6475,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 103275,no
 88368,si
 83256,no
-66108,no
+66108,si
 65067,no
 31807,no
 126406,no
@@ -6779,7 +6779,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 81018,no
 97748,no
 138490,no
-31249,no
+31249,si
 11573,no
 111022,no
 50565,no
@@ -7526,7 +7526,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 56067,no
 137835,no
 76218,no
-65727,si
+65727,no
 4396,no
 31300,no
 30424,si
@@ -7982,7 +7982,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 38727,si
 140911,no
 63868,no
-9098,no
+9098,si
 33748,no
 22026,no
 36403,no
@@ -8032,7 +8032,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 15083,no
 703,no
 9739,no
-81690,si
+81690,no
 46418,no
 21280,no
 47159,no
@@ -8070,7 +8070,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 122964,no
 79864,no
 80835,no
-123133,si
+123133,no
 78911,no
 34966,no
 18044,no
@@ -8099,7 +8099,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 63663,no
 23341,no
 98799,no
-52491,si
+52491,no
 3348,no
 71676,no
 4679,no
@@ -8184,7 +8184,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 102283,si
 21648,no
 100654,no
-91960,no
+91960,si
 136987,no
 10068,no
 7722,no
@@ -8458,7 +8458,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 18671,no
 82511,si
 136165,no
-78168,no
+78168,si
 137197,no
 72837,no
 31596,si
@@ -8774,7 +8774,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 96059,no
 102373,si
 52877,no
-90690,no
+90690,si
 99863,no
 32706,si
 62605,no
@@ -9371,20 +9371,20 @@ id,llovieron_hamburguesas_al_dia_siguiente
 33324,no
 139896,no
 869,no
-87229,si
+87229,no
 56828,no
 6869,no
-119525,no
+119525,si
 47388,no
 49593,no
 11915,no
 76774,no
-127504,si
+127504,no
 63265,no
 101593,no
 137602,no
 53628,si
-34615,si
+34615,no
 16015,no
 17270,no
 119780,no
@@ -9428,7 +9428,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 126207,no
 14117,no
 110702,no
-142574,no
+142574,si
 8438,no
 35352,si
 135951,no
@@ -9751,7 +9751,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 69746,no
 76581,si
 133284,no
-73674,si
+73674,no
 26827,no
 75410,no
 137063,no
@@ -9875,7 +9875,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 16721,no
 10383,no
 108554,no
-96935,no
+96935,si
 53416,no
 107510,no
 15543,no
@@ -9944,7 +9944,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 128601,no
 53141,no
 44921,no
-81943,no
+81943,si
 58486,no
 106572,no
 51935,no
@@ -10168,7 +10168,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 47491,no
 87416,no
 28515,no
-32669,si
+32669,no
 42148,no
 114772,no
 124989,no
@@ -10270,7 +10270,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 12332,no
 79623,si
 32273,no
-1535,si
+1535,no
 106558,no
 101686,no
 76248,no
@@ -10494,7 +10494,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 117017,no
 114746,no
 94221,no
-18892,no
+18892,si
 108607,no
 38749,no
 56194,no
@@ -10538,7 +10538,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 13131,no
 37309,no
 144853,no
-7143,si
+7143,no
 112086,no
 135338,si
 60871,si
@@ -10708,7 +10708,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 114533,no
 13494,si
 68224,no
-80857,no
+80857,si
 64271,no
 12026,no
 41910,no
@@ -10947,7 +10947,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 138024,no
 46738,no
 4537,no
-110251,no
+110251,si
 72838,no
 42954,no
 138096,no
@@ -11191,7 +11191,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 96723,no
 140727,si
 86786,no
-31749,no
+31749,si
 23834,si
 41075,no
 101221,no
@@ -11389,7 +11389,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 36083,no
 18244,no
 125158,no
-46298,no
+46298,si
 32066,no
 98207,no
 61528,no
@@ -11634,7 +11634,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 29203,no
 140530,no
 69721,no
-36000,no
+36000,si
 58288,si
 2489,no
 81416,no
@@ -11766,7 +11766,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 23537,no
 21182,no
 131268,si
-119548,si
+119548,no
 24325,no
 132522,no
 126289,no
@@ -12066,7 +12066,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 19560,si
 32809,si
 106677,no
-129085,no
+129085,si
 111640,no
 87636,no
 129920,no
@@ -12211,7 +12211,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 83003,no
 26842,no
 28542,no
-120284,si
+120284,no
 100724,no
 92266,no
 133042,no
@@ -12382,7 +12382,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 14809,no
 123048,no
 84487,no
-72663,no
+72663,si
 133999,no
 70330,no
 143125,no
@@ -12422,7 +12422,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 25444,no
 69887,no
 103719,no
-47043,si
+47043,no
 55231,no
 51687,no
 131829,no
@@ -12541,7 +12541,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 119965,no
 45402,no
 97036,si
-122700,no
+122700,si
 79404,no
 12526,no
 37329,no
@@ -12605,7 +12605,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 128273,no
 95765,no
 119475,no
-118942,no
+118942,si
 63284,no
 48628,no
 32653,no
@@ -13007,7 +13007,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 135314,no
 85059,no
 28788,no
-128313,si
+128313,no
 144028,no
 35389,no
 139388,no
@@ -13131,7 +13131,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 103037,no
 125402,no
 9531,si
-131026,no
+131026,si
 48204,no
 4286,no
 59344,no
@@ -13332,12 +13332,12 @@ id,llovieron_hamburguesas_al_dia_siguiente
 85773,no
 128621,no
 96951,no
-131529,si
+131529,no
 52722,no
 64692,no
 41684,no
 21688,no
-69641,no
+69641,si
 91040,no
 120471,no
 126883,no
@@ -13373,7 +13373,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 18225,no
 72177,no
 3541,no
-59005,si
+59005,no
 94169,no
 86087,no
 136784,si
@@ -13618,7 +13618,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 115887,no
 34776,no
 105484,no
-119041,no
+119041,si
 128481,si
 41223,si
 60460,no
@@ -13636,11 +13636,11 @@ id,llovieron_hamburguesas_al_dia_siguiente
 62098,no
 108848,no
 101432,si
-20352,no
+20352,si
 85785,no
 71746,no
 59354,no
-69709,si
+69709,no
 48893,no
 14888,si
 68796,no
@@ -14286,7 +14286,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 55033,no
 6598,no
 99429,no
-44101,no
+44101,si
 52192,no
 94021,si
 48711,no
@@ -14379,7 +14379,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 143144,no
 54163,si
 79687,si
-139710,no
+139710,si
 106012,no
 39749,no
 85912,no
@@ -14406,7 +14406,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 8073,no
 139614,no
 42998,no
-121782,si
+121782,no
 142554,no
 112188,no
 3469,no
@@ -14420,7 +14420,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 81884,si
 106908,no
 108890,no
-56419,si
+56419,no
 71290,no
 65529,no
 89616,no
@@ -14509,7 +14509,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 129260,no
 37009,no
 72534,no
-104279,si
+104279,no
 1064,si
 100502,no
 79284,si
@@ -14622,7 +14622,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 127172,no
 26408,no
 22984,no
-81705,si
+81705,no
 90263,no
 70346,no
 77627,no
@@ -14673,7 +14673,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 126940,no
 12445,no
 139554,no
-81949,no
+81949,si
 32042,no
 44774,no
 77308,no
@@ -14737,7 +14737,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 68459,no
 59821,no
 56848,no
-21231,no
+21231,si
 73750,no
 97967,no
 81011,no
@@ -14812,7 +14812,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 10258,no
 71207,no
 12477,si
-44471,no
+44471,si
 117767,no
 4517,no
 61591,si
@@ -15074,9 +15074,9 @@ id,llovieron_hamburguesas_al_dia_siguiente
 89208,no
 70504,no
 131730,no
-130727,no
+130727,si
 141481,no
-78159,no
+78159,si
 91250,no
 119290,no
 37152,no
@@ -15106,7 +15106,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 24716,no
 72807,no
 90294,no
-53125,no
+53125,si
 51880,no
 31696,no
 107041,no
@@ -15138,7 +15138,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 141849,no
 45461,no
 99804,no
-79511,no
+79511,si
 80327,no
 80308,si
 108721,no
@@ -15203,7 +15203,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 137844,no
 13038,no
 58735,no
-46682,si
+46682,no
 31832,si
 52456,no
 95743,no
@@ -15814,7 +15814,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 70797,no
 24133,no
 86403,no
-59043,si
+59043,no
 141871,no
 13404,si
 85252,no
@@ -15841,7 +15841,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 106060,no
 15593,no
 111443,no
-70044,no
+70044,si
 21425,no
 71205,no
 118442,no
@@ -15955,7 +15955,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 8908,no
 21970,si
 84232,no
-95078,si
+95078,no
 112302,no
 31611,no
 124490,no
@@ -15974,7 +15974,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 45240,no
 141223,no
 92335,no
-3441,no
+3441,si
 88044,no
 138303,no
 126013,no
@@ -16206,7 +16206,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 24038,no
 134520,no
 67023,no
-32348,no
+32348,si
 17815,no
 72763,no
 9993,si
@@ -16257,7 +16257,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 140083,si
 81974,no
 139881,no
-18925,no
+18925,si
 19248,no
 74041,no
 106906,no
@@ -16278,7 +16278,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 101766,no
 11400,no
 21599,si
-23979,si
+23979,no
 92906,no
 76108,si
 44660,no
@@ -16558,7 +16558,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 41653,no
 73029,no
 119467,no
-134026,no
+134026,si
 137070,no
 107503,no
 118349,no
@@ -16721,7 +16721,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 78903,no
 93394,no
 76302,si
-3280,no
+3280,si
 139529,no
 138977,no
 142238,no
@@ -16740,7 +16740,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 24075,no
 52322,no
 131522,no
-19075,no
+19075,si
 142358,no
 70483,no
 18036,no
@@ -16752,7 +16752,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 45560,no
 66036,no
 134544,no
-69166,si
+69166,no
 20837,no
 97553,no
 112083,no
@@ -16783,7 +16783,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 109823,no
 36767,no
 73217,no
-139761,no
+139761,si
 22316,no
 88853,no
 21721,si
@@ -16862,7 +16862,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 89091,no
 107624,no
 100736,no
-123126,no
+123126,si
 52251,si
 103140,no
 3047,no
@@ -16987,7 +16987,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 124739,no
 35588,no
 82219,si
-80822,no
+80822,si
 75736,no
 36649,no
 56970,si
@@ -17050,7 +17050,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 46633,no
 80183,no
 5194,no
-3182,no
+3182,si
 108665,no
 36452,no
 46485,no
@@ -17221,7 +17221,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 29154,no
 15057,no
 78229,si
-47845,si
+47845,no
 80126,no
 99753,no
 43535,no
@@ -17256,7 +17256,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 127510,si
 75213,si
 44482,no
-89011,si
+89011,no
 16358,no
 19320,si
 61715,no
@@ -17302,7 +17302,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 37287,no
 24933,si
 90135,no
-109833,si
+109833,no
 137773,no
 23541,no
 69790,no
@@ -17577,7 +17577,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 131776,no
 19506,no
 45630,no
-9587,no
+9587,si
 84542,no
 25105,no
 108798,si
@@ -17715,7 +17715,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 18936,no
 73230,no
 2635,no
-77571,no
+77571,si
 67494,no
 47650,no
 65225,no
@@ -17798,7 +17798,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 143856,no
 71613,no
 73883,si
-61224,no
+61224,si
 138474,no
 75631,no
 81754,no
@@ -17813,7 +17813,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 89524,no
 15254,si
 112282,no
-79237,no
+79237,si
 82135,no
 62725,no
 5085,si
@@ -17835,7 +17835,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 66466,no
 65956,no
 20003,si
-62628,si
+62628,no
 36330,no
 122987,no
 104843,no
@@ -18059,7 +18059,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 75764,no
 75099,no
 180,no
-43977,si
+43977,no
 90603,no
 120575,no
 102150,si
@@ -18087,7 +18087,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 65899,no
 35410,no
 142625,si
-19580,si
+19580,no
 337,no
 80637,si
 3731,no
@@ -18309,7 +18309,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 78185,no
 136151,no
 50623,no
-23640,no
+23640,si
 38208,no
 47229,no
 143481,no
@@ -18471,7 +18471,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 47027,no
 94804,no
 20281,no
-142996,si
+142996,no
 68453,no
 39696,no
 143123,no
@@ -18605,7 +18605,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 576,no
 73576,si
 73173,no
-18337,si
+18337,no
 61885,si
 61267,no
 8298,no
@@ -18637,7 +18637,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 96012,no
 124839,no
 130665,no
-12577,si
+12577,no
 104726,no
 118564,no
 76896,si
@@ -18662,7 +18662,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 42834,no
 55942,no
 48862,no
-48457,no
+48457,si
 38140,no
 110294,no
 20249,no
@@ -18772,7 +18772,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 123903,no
 128615,no
 8978,no
-141806,no
+141806,si
 58923,no
 45640,no
 118245,no
@@ -19068,7 +19068,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 30814,no
 15462,no
 144609,no
-17744,si
+17744,no
 115156,no
 143770,si
 134605,no
@@ -19304,9 +19304,9 @@ id,llovieron_hamburguesas_al_dia_siguiente
 45753,no
 12573,no
 135043,no
-89833,si
+89833,no
 71616,no
-83665,si
+83665,no
 94743,no
 124072,no
 105172,no
@@ -19499,7 +19499,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 97950,no
 94983,no
 135499,no
-58530,no
+58530,si
 124181,no
 139823,no
 62379,no
@@ -19600,7 +19600,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 39783,no
 42088,no
 125008,no
-29328,si
+29328,no
 27657,no
 126522,no
 78530,no
@@ -19621,7 +19621,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 42950,no
 91063,si
 37965,no
-81620,si
+81620,no
 129587,no
 142330,si
 55699,no
@@ -19710,7 +19710,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 43570,no
 1183,no
 80399,si
-31120,si
+31120,no
 51517,no
 115751,no
 32529,no
@@ -19739,7 +19739,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 20668,no
 128631,no
 66258,no
-104589,si
+104589,no
 19838,no
 28442,no
 98851,no
@@ -19931,7 +19931,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 100940,no
 91984,no
 76634,si
-32784,si
+32784,no
 41146,no
 119227,si
 117701,no
@@ -20054,7 +20054,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 71824,no
 134147,no
 108363,no
-46811,no
+46811,si
 134330,no
 7813,no
 119773,no
@@ -20444,7 +20444,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 63960,no
 41549,no
 79412,no
-44877,no
+44877,si
 87224,no
 91446,si
 111306,no
@@ -20747,7 +20747,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 19519,no
 131715,no
 110735,no
-120633,no
+120633,si
 122632,no
 105175,no
 30869,si
@@ -20773,7 +20773,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 145363,no
 100290,no
 15013,no
-130701,si
+130701,no
 35280,si
 52790,si
 52031,no
@@ -20908,7 +20908,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 103214,no
 136847,no
 34246,no
-87779,no
+87779,si
 130479,no
 2847,no
 114436,no
@@ -20961,7 +20961,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 131247,no
 77265,no
 17846,no
-116891,no
+116891,si
 34044,no
 28608,no
 48471,no
@@ -20987,7 +20987,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 72939,no
 26074,no
 9156,si
-56144,no
+56144,si
 90561,no
 131869,no
 60878,no
@@ -21570,7 +21570,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 77042,no
 19155,si
 54364,no
-131916,no
+131916,si
 34774,no
 42404,no
 6352,no
@@ -21731,7 +21731,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 104845,si
 66879,no
 126473,no
-43092,si
+43092,no
 40315,no
 31375,si
 29469,no
@@ -21829,7 +21829,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 95565,no
 27586,no
 628,no
-42448,no
+42448,si
 110520,no
 108980,no
 64640,no
@@ -21866,7 +21866,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 125029,no
 86266,no
 54374,no
-97334,si
+97334,no
 85680,no
 47203,no
 109074,no
@@ -21925,7 +21925,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 101326,no
 47811,no
 29714,si
-77197,si
+77197,no
 73792,no
 132043,no
 129742,si
@@ -21938,7 +21938,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 131840,no
 88767,no
 48406,no
-81048,no
+81048,si
 8057,no
 17985,no
 131974,no
@@ -22038,7 +22038,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 83979,no
 121640,no
 20716,no
-87712,no
+87712,si
 46965,si
 1703,no
 10345,no
@@ -22070,7 +22070,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 98825,no
 2563,no
 44352,no
-66932,si
+66932,no
 6186,no
 48057,no
 19765,no
@@ -22333,12 +22333,12 @@ id,llovieron_hamburguesas_al_dia_siguiente
 348,no
 10787,si
 90411,si
-72457,si
+72457,no
 99139,no
 45765,no
 54188,no
 74066,no
-3991,no
+3991,si
 105393,no
 41058,no
 125549,no
@@ -22388,7 +22388,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 106944,no
 9814,no
 10366,no
-52630,no
+52630,si
 68843,no
 137373,no
 1553,no
@@ -22408,7 +22408,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 90156,no
 81585,si
 27677,si
-35341,si
+35341,no
 29167,no
 25439,no
 36835,no
@@ -22469,7 +22469,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 34446,no
 8195,no
 59099,si
-108580,no
+108580,si
 138527,no
 7488,no
 47246,si
@@ -22520,7 +22520,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 15112,no
 127943,no
 46154,no
-19205,si
+19205,no
 139053,no
 145345,no
 66776,no
@@ -22637,7 +22637,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 25773,no
 123503,no
 6498,no
-82178,si
+82178,no
 5261,no
 2516,no
 84812,no
@@ -22758,7 +22758,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 112117,si
 133294,si
 47686,no
-101418,no
+101418,si
 54271,no
 127560,no
 22320,no
@@ -22982,7 +22982,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 62,no
 28162,no
 123169,no
-33797,si
+33797,no
 50332,no
 31978,si
 3575,no
@@ -23281,7 +23281,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 27299,no
 107397,si
 143941,no
-9759,si
+9759,no
 29326,no
 17872,no
 92707,no
@@ -23294,7 +23294,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 30333,no
 13795,no
 43158,no
-53407,si
+53407,no
 95178,no
 135171,si
 107693,no
@@ -23423,7 +23423,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 25791,no
 50440,no
 125254,si
-127845,si
+127845,no
 13827,no
 32185,no
 113069,no
@@ -23800,7 +23800,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 39336,no
 99433,no
 88902,no
-110035,si
+110035,no
 92841,no
 36377,no
 104704,no
@@ -23924,7 +23924,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 127709,no
 126551,no
 96659,no
-21956,si
+21956,no
 98920,no
 20767,no
 44773,si
@@ -23953,10 +23953,10 @@ id,llovieron_hamburguesas_al_dia_siguiente
 77685,si
 26826,si
 14071,no
-133349,si
+133349,no
 47675,no
 129024,no
-16025,si
+16025,no
 136946,no
 123987,no
 79742,no
@@ -24017,7 +24017,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 70859,no
 61459,no
 35887,si
-15384,no
+15384,si
 24064,si
 135556,no
 10282,no
@@ -24153,7 +24153,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 63041,si
 41590,no
 97067,si
-43371,no
+43371,si
 118320,no
 39282,no
 33481,no
@@ -24217,7 +24217,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 39641,no
 37533,no
 99674,no
-143352,si
+143352,no
 3683,no
 81231,si
 117614,no
@@ -24228,7 +24228,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 135751,si
 71971,no
 121038,si
-130546,si
+130546,no
 99218,no
 60487,no
 144855,no
@@ -24555,7 +24555,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 77015,no
 128393,no
 114301,si
-116213,no
+116213,si
 54226,no
 68141,no
 33465,no
@@ -24599,7 +24599,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 10095,no
 135239,no
 102640,no
-43439,si
+43439,no
 94517,no
 25184,si
 55251,no
@@ -24772,7 +24772,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 97207,no
 118060,no
 127877,no
-62073,no
+62073,si
 136327,no
 128760,si
 115681,no
@@ -24830,7 +24830,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 18637,si
 105274,no
 23961,no
-83181,si
+83181,no
 68888,si
 82177,si
 105821,no
@@ -24966,7 +24966,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 80510,no
 50208,no
 82911,si
-42332,no
+42332,si
 44048,no
 27742,no
 13593,no
@@ -25170,10 +25170,10 @@ id,llovieron_hamburguesas_al_dia_siguiente
 44824,no
 135973,no
 128000,no
-102732,si
+102732,no
 48179,no
 139002,no
-41235,no
+41235,si
 84771,no
 63849,no
 102177,no
@@ -25212,12 +25212,12 @@ id,llovieron_hamburguesas_al_dia_siguiente
 127287,si
 19739,no
 9333,no
-83724,si
+83724,no
 122130,si
 128765,no
 16189,no
 95280,no
-111607,si
+111607,no
 116199,si
 102918,no
 100278,no
@@ -25351,7 +25351,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 91000,no
 93391,no
 7631,no
-90201,no
+90201,si
 136334,no
 54774,no
 2139,no
@@ -25397,7 +25397,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 141789,no
 91889,no
 57028,no
-128169,si
+128169,no
 48947,no
 95685,no
 106454,no
@@ -25648,7 +25648,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 101733,no
 68708,no
 66026,si
-117308,si
+117308,no
 54589,si
 95675,no
 131914,no
@@ -25685,7 +25685,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 76500,no
 138695,no
 28595,si
-4674,si
+4674,no
 68826,no
 101265,no
 5338,no
@@ -25699,7 +25699,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 142747,no
 20200,no
 138992,no
-87913,si
+87913,no
 85374,si
 95417,no
 76452,no
@@ -25745,7 +25745,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 86402,si
 115376,no
 24246,no
-42453,si
+42453,no
 7255,no
 43555,no
 52059,no
@@ -25840,7 +25840,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 13996,no
 143070,no
 139404,no
-76697,si
+76697,no
 59217,no
 63549,no
 95898,no
@@ -25964,7 +25964,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 131171,no
 141660,no
 104551,no
-67518,no
+67518,si
 111336,si
 130877,si
 77368,no
@@ -25995,7 +25995,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 97545,no
 54642,no
 73524,no
-2978,si
+2978,no
 113842,no
 118479,no
 84574,no
@@ -26169,7 +26169,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 132771,si
 136157,no
 135960,no
-53239,si
+53239,no
 121622,no
 53966,no
 60876,no
@@ -26265,7 +26265,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 109075,no
 56035,no
 19687,no
-86780,si
+86780,no
 121621,no
 40786,no
 46329,no
@@ -26346,7 +26346,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 16835,no
 27501,no
 41703,no
-42564,no
+42564,si
 125442,no
 34501,no
 113710,no
@@ -26402,7 +26402,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 19796,no
 24025,no
 87242,si
-43611,si
+43611,no
 61075,no
 78129,no
 73937,no
@@ -26654,7 +26654,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 28882,no
 71950,no
 21415,no
-89623,si
+89623,no
 65070,no
 13438,no
 45716,no
@@ -26734,7 +26734,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 74175,no
 106436,no
 140740,no
-74295,si
+74295,no
 116184,no
 140353,si
 66410,no
@@ -26747,7 +26747,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 121820,si
 137611,no
 69499,no
-27338,no
+27338,si
 59451,no
 142110,si
 12608,no
@@ -26834,7 +26834,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 85285,no
 75058,no
 52254,no
-37587,no
+37587,si
 108487,no
 142453,no
 128392,no
@@ -26895,7 +26895,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 5257,no
 9173,no
 89315,no
-133319,si
+133319,no
 13446,no
 130183,no
 37028,no
@@ -27123,7 +27123,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 129890,no
 27295,no
 1769,no
-31613,no
+31613,si
 46596,no
 17894,no
 139731,no
@@ -27239,7 +27239,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 59261,no
 60464,no
 2311,no
-87634,si
+87634,no
 44244,no
 99115,no
 111971,no
@@ -27412,7 +27412,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 79648,no
 73948,no
 44893,no
-1599,no
+1599,si
 21954,no
 24189,no
 49756,si
@@ -27487,7 +27487,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 57503,no
 57572,no
 94227,no
-131972,si
+131972,no
 124828,no
 138460,no
 135258,si
@@ -27517,7 +27517,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 50052,no
 26102,no
 50534,no
-57312,si
+57312,no
 123733,no
 142542,no
 80220,si
@@ -27662,7 +27662,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 18552,no
 29809,no
 12797,no
-76904,si
+76904,no
 15976,no
 10493,no
 72833,no
@@ -27709,7 +27709,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 52015,no
 70732,no
 2202,no
-21113,no
+21113,si
 15857,no
 86847,no
 42020,si
@@ -27765,7 +27765,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 98213,no
 11179,si
 32147,no
-75572,si
+75572,no
 82367,si
 6480,no
 28186,no
@@ -27916,7 +27916,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 83015,no
 38051,no
 62945,no
-40639,si
+40639,no
 57580,no
 14338,no
 12091,no
@@ -28044,7 +28044,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 124350,no
 57064,no
 10912,si
-67915,si
+67915,no
 92172,si
 51964,no
 19421,no
@@ -28069,7 +28069,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 130248,no
 65201,no
 118510,si
-10384,si
+10384,no
 13057,no
 36400,si
 130329,no
@@ -28308,14 +28308,14 @@ id,llovieron_hamburguesas_al_dia_siguiente
 59601,no
 96531,no
 22126,no
-130466,no
+130466,si
 55611,si
 134469,no
 130455,no
 20746,no
 121068,no
 51399,no
-30304,si
+30304,no
 35730,si
 70109,si
 145132,no
@@ -28414,7 +28414,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 56101,no
 17280,si
 37891,no
-32198,no
+32198,si
 132090,no
 131402,no
 36408,si
@@ -28450,7 +28450,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 100047,no
 42334,no
 17046,no
-1059,no
+1059,si
 57558,si
 43633,si
 29402,no
@@ -28500,7 +28500,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 82942,no
 131146,no
 140166,no
-2155,si
+2155,no
 64573,no
 36886,no
 17006,no
@@ -28723,7 +28723,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 94035,si
 83286,no
 50056,no
-77553,si
+77553,no
 141308,no
 90174,si
 864,no
@@ -28755,7 +28755,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 120116,no
 48174,no
 139657,si
-87707,no
+87707,si
 144860,no
 102233,si
 22475,no
@@ -29060,7 +29060,7 @@ id,llovieron_hamburguesas_al_dia_siguiente
 105500,si
 86874,no
 102309,no
-23774,si
+23774,no
 29927,no
 19617,si
 120824,no
