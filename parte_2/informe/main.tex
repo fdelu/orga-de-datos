@@ -199,6 +199,9 @@
 	\pagebreak
 
 	\section{Modelos}
+	Todas las métricas presentadas fueron evaluadas respecto al set de
+	test-holdout, que no fue utilizado durante el entrenamiento ni
+	para la selección del preprocesamiento e hiperparámetros de cada modelo.
 
 	\begingroup
 	\fontsize{11pt}{12pt}\selectfont
@@ -213,18 +216,16 @@
 	\pagebreak
 
 	\section{Conclusión}
-	De todos los modelos entrenados, los dos que resultaron ser mejores 
-	fueron la red neuronal y el ensamble en cascada. En ambos casos su
-	AUC-ROC fue de 0.895, lo cual es bastante aceptable. Si tuvieramos que
-	elegir uno, nos decantaríamos por la red neuronal, ya que es el modelo
-	más sencillo de los dos: el cascading ya de por sí tiene como uno de los
-	modelos que utiliza a la misma red.
+	De todos los modelos entrenados, el que mejor resultó de acuerdo a
+	el área bajo la curva ROC fue la red neuronal, que le dio un valor de
+	de 0.896, lo cual es bastante aceptable. Los ensambles de Cascading
+	y AdaBoost estuvieron bastante cerca, pero levemente por debajo.
 
 	La baseline que hicimos a partir del análisis de los datos tenía un
 	accuracy de alrededor de $83\%$. Podemos ver que esta métrica fue
 	ampliamente superada por casi todos los modelos (exceptuando el
-	perceptrón y Naive Bayes), por lo que los resultados fueron bastante
-	positivos.
+	perceptrón y Naive Bayes), por lo que los resultados fueron en general
+	bastante positivos.
 
 	Algo a notar es que todos los modelos tienen un Recall bastante bajo.
 	El Recall es una métrica que responde a la pregunta: de las instancias
@@ -238,8 +239,8 @@
 	eligiríamos el que tiene el Precision más alto, que responde a la pregunta:
 	de los detectadaos como positivos, ¿qué porcentaje realmente lo eran?. Entonces,
 	a Precision más alto, menor cantidad de falsos positivos. En este caso, el
-	modelo con Precision más alto resultó ser el \textit{AdaBoostClassifier}. Podemos
-	notar que esa ganancia no fue gratuita: perdió mucho en Recall.
+	modelo con Precision más alto resultó ser el \textit{SVM}, con un valor de 
+	0.796. Podemos ver que notar que esa ganancia no fue gratuita: perdió en Recall.
 
 	Si necesitaramos una lista de los potenciales días que vayan a llover, es decir,
 	minimizar los falsos negativos, volveríamos al problema del Recall. El modelo
@@ -256,7 +257,9 @@
 	hiperpárametros en los modelos a entrenar. Por ejemplo, en el notebook del 
 	árbol de decisión, si elegíamos el parámetro de \textit{class\_weight} = 
 	``\textit{balanced}'', daba bastante mejor Recall que en el que terminó quedando en la
-	 tabla anterior.
+	tabla anterior. Para entrenar la red, podríamos haber frenado el progreso de las epochs
+	con una métrica como F-score con $\beta = 2$, que prioriza el Recall dos veces más que
+	la Precision.
 
 	
 \end{document}
