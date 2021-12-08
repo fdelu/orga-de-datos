@@ -16,15 +16,20 @@ Si el parámetro \textbf{fecha\_to\_int} es True, convierte \textit{dia} en un e
 \textbf{common()} \\
 \hline
 Día a mes &
-Convierte \textit{dia} en el mes correspondiente a la fecha &
+Convierte la feature \textit{dia} en el mes correspondiente a la fecha (numérico) &
 \textbf{dia\_a\_mes()} \\
 \hline
 Viento trigonométrico &
 Convierte las features de dirección del viento en pares de features $\langle\sin{\theta},\cos{\theta}\rangle$, donde $\theta$ es el ángulo de dicha dirección &
 \textbf{viento\_trigonometrico()} \\
 \hline
+Dummy &
+Aplica \textbf{One Hot Encoding} a una lista de features, dropeando la primera columna y creando una nueva para las instancias
+con missing &
+\textbf{dummy()} \\
+\hline
 Barrios a comunas &
-Realiza un hashing de los valores de la feature \textbf{barrio}, donde el nombre de cada barrio se reemplaza por el nombre de su comuna (\textit{Comuna 1}, \textit{Comuna 2}, etc) &
+Realiza un hashing de los valores de la feature \textbf{barrio}, donde el nombre de cada barrio se reemplaza por el nombre de su comuna (\textit{Comuna 1}, \textit{Comuna 2}, etc) y le aplica el preprocessing \textbf{Dummy} &
 \textbf{barrios\_a\_comunas()} \\
 \hline
 Estandarización &
@@ -42,6 +47,15 @@ Agrega un \textbf{IterativeImputer()} a la \textbf{Pipeline}, que imputa los val
 Drop categóricas &
 Dropea las features categóricas del dataset (Si se ejecutó el preprocesamiento \textit{Viento trigonometrico}, solo dropea la feature \textbf{barrio}) &
 \textbf{drop\_categoricas()} \\
+\hline
+Drop correlacionadas &
+Dropea features que presentaron una fuerte correlación durante el análisis exploratorio (\textbf{temp\_max},
+\textbf{presion\_atmosferica\_temprano} y \textbf{temperatura\_temprano}) &
+\textbf{drop\_correlacionadas()} \\
+\hline
+Drop discretas &
+Dropea las features \textbf{nubosidad\_temprano} y \textbf{nubosidad\_tarde} &
+\textbf{drop\_discretas()} \\
 \hline
 Hashing trick &
 Transforma una feature categórica en varias columnas con valores 0 o 1 a partir de un vector obtenido con una función de hash sobre la variable &

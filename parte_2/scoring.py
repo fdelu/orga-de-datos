@@ -2,6 +2,9 @@ from sklearn import metrics
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# Funciones utilizadas para calcular distintos tipos de scores
+# y graficos relacionados a ellos
+
 SCORINGS = ["roc_auc", "accuracy", "precision", "recall", "f1"]
 METRIC = "roc_auc"
 
