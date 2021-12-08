@@ -12,7 +12,7 @@ from sklearn.decomposition import PCA
 
 from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import IterativeImputer, SimpleImputer
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.preprocessing import StandardScaler, OneHotEncoder, MinMaxScaler
 from sklearn.feature_selection import SequentialFeatureSelector
 
 variables_numericas = [
@@ -220,6 +220,9 @@ def _pipe(pipe, imp):
 def simple_imputer(pipe = None):
     return _pipe(pipe, ('imputer', SimpleImputer()))
     
+def minmax(pipe = None):
+    return _pipe(pipe, ('scaler', MinMaxScaler()))
+
 # Agrega un StandarScaler a la pipe (E[x] = 0, Var(X) = 1)
 def standarizer(pipe = None):
     return _pipe(pipe, ('scaler', StandardScaler()))
