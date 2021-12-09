@@ -185,6 +185,20 @@
 	%
 	% Inicio del TP:
 	%
+	\section{Introducción}
+	El presente informe es un resumen de todos los resultados obtenidos a lo largo del TP.
+	En total, se entrenaron 9 modelos, de los cuales 3 son ensambles, y uno de ellos fue programado manualmente
+	($\textbf{CascadingClassifier}$). Todos los modelos fueron entrenados utilizando al menos dos conjuntos de técnicas de
+	preprocessing, de forma que cada preprocessing está conformado por varias funciones del archivo \textit{preprocessing.py}. El análisis exhaustivo de cada modelo se encuentra detallado en sus respectivos \textit{Notebooks}, en los cuales se encuentran los procedimientos, resultados intermedios, \textit{tuning} de hiperparámetros, y todo lo que nos condujo al modelo final.
+	
+	Por último, para cada modelo final, se calcularon las métricas \textit{ROC-AUC}, \textit{Accuracy}, \textit{Precision},
+	\textit{Recall}, \textit{F1 Score} y Matriz de confusión, utilizando el set de test-holdout.
+	En base a eso, se evaluaron los distintos modelos entre sí, comparando no solo la métrica a optimizar (en este caso,
+	\textit{ROC-AUC}), sino también su desempeño global, fortalezas, debilidades de cada uno, etc.
+	
+	
+	
+	
 	\newgeometry{margin=0.2in}
 	
 	\section{Preprocesamientos}
@@ -235,25 +249,25 @@
 	una gran cantidad de falsos negativos, lo que es la causa de que esta métrica
 	haya dado tan baja.
 
-	Si tuvieramos que elegir el modelo con la menor cantidad de falsos positivos,
+	Si tuviéramos que elegir el modelo con la menor cantidad de falsos positivos,
 	eligiríamos el que tiene el Precision más alto, que responde a la pregunta:
-	de los detectadaos como positivos, ¿qué porcentaje realmente lo eran?. Entonces,
+	de los detectados como positivos, ¿qué porcentaje realmente lo eran?. Entonces,
 	a Precision más alto, menor cantidad de falsos positivos. En este caso, el
 	modelo con Precision más alto resultó ser el \textit{SVM}, con un valor de 
 	0.796. Podemos ver que notar que esa ganancia no fue gratuita: perdió en Recall.
 
-	Si necesitaramos una lista de los potenciales días que vayan a llover, es decir,
+	Si necesitáramos una lista de los potenciales días que vayan a llover, es decir,
 	minimizar los falsos negativos, volveríamos al problema del Recall. El modelo
 	con mejor Recall en este caso es Naive Bayes. Nuevamente, pierde mucho en otras
 	métricas: es el segundo peor modelo en nuestra lista ordenada por AUC-ROC. De
 	todas formas, los modelos encontrados tienen todos un Recall exageradamente bajo, y
-	si realmente necesitaramos tener pocos falsos negativos, probablemente intentaramos
+	si realmente necesitáramos tener pocos falsos negativos, probablemente intentaríamos
 	con modelos nuevos o incluso pensamos que sería mejor un modelo que responda siempre
 	que 'si' antes que los que pudimos entrenar.
 
 	Podemos también considerar que a la hora de entrenar los modelos, se optimizó para 
-	maximizar la métrica de AUC-ROC. Si nos encontraramos en los 2 casos hipotéticos
-	descritos en los párrafos anteriores, probablemente hubieramos elegido otros
+	maximizar la métrica de AUC-ROC. Si nos encontráramos en los 2 casos hipotéticos
+	descritos en los párrafos anteriores, probablemente hubiéramos elegido otros
 	hiperpárametros en los modelos a entrenar. Por ejemplo, en el notebook del 
 	árbol de decisión, si elegíamos el parámetro de \textit{class\_weight} = 
 	``\textit{balanced}'', daba bastante mejor Recall que en el que terminó quedando en la
